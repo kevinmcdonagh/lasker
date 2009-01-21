@@ -2,12 +2,19 @@
  * @author kevin
  */
 
-$("td").hover(
-  function () {
-    $(this).addClass("hover");
-  },
-  function () {
-    $(this).removeClass("hover");
-  }
-);
+$(document).ready(function(){
+	//highlightCurrentTile();
+	hoverSelectionImg();
+});
 
+function highlightCurrentTile()
+{
+	$("td img").hover(
+	  function () {
+	    $(this).attr("src","img/trees.png");
+	  },
+	  function () {
+        $(this).attr("src","img/plain.png");
+	  }
+	);
+}
