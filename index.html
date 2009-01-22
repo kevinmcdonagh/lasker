@@ -4,14 +4,16 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Css Grid</title>
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
-		<link rel="stylesheet" type="text/css" href="css/board.css" />
 		<link rel="stylesheet" type="text/css" href="css/demoPage.css" />
+		<link rel="stylesheet" type="text/css" href="css/board.css" />
 		<script type="text/javascript" src="js/jquery-1.3.js"></script>
 		<script type="text/javascript" src="js/demo.js"></script>
-		<script type="text/javascript" src="js/tooltip.js"></script>
+		<script>
+			var currentXY = 00;
+		</script>
 		<style>
-			#customwarsboard, #tooltip {
-				cursor:url(img/hover.cur), none;
+			#customwarsboard{
+				cursor: pointer;
 		}
 		</style>
     </head>
@@ -161,7 +163,7 @@
 	        </tbody>     
  	</table>
 	<div id="messages">
-		sajhghjklk;jhgjkl;'
+		<p></p>
 	</div>
 	</body>
 </html>
