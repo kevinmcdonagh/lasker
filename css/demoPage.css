@@ -5,30 +5,3 @@
 	padding:1em;
 }
 
-#tooltip{
-        position:absolute;
-		width:22px;
-		height:22px;
-        z-index: 999;
-		background-image:url(../img/hover.png);
-}
-
-#tooltip {
-        text-align:left;
-}
-
-#tooltip dl {
-        margin: 0 0 0.3em;
-}
-
-#tooltip dt{
-        border-bottom:1px solid #666;
-        margin-bottom:4px;
-}
-
-#tooltip dd{
-        font-size:0.9em;
-        text-align:left;
-        line-height: 1.1;
-        margin-left: 0;
-}
