@@ -10,16 +10,38 @@ $(document).ready(function(){
 function getCoOrdinatesOfCurrentTileOnClick()
 {
     $("#customwarsboard td").live("click", function(){
-		$("#messages").append("<p>" + this.id + "</p>");
+		addToMsgs(this.id)
+		highlightCells();
     });
 }
 
 function getCoOrdinatesOfCurrentTile()
 {
 	$("#customwarsboard td").hover(function(event){
-		$("#messages").append("<p>" + this.id + "</p>");
+		addToMsgs(this.id)
 		currentXY = this.id;
 	}, function(){
-		$("#messages p").remove();
+		clrMsgs();
+	});
+}
+
+function addToMsgs(msg){
+	$("#messages").append("<p>" + msg + "</p>");
+}
+
+function clrMsgs(){
+	$("#messages p").remove();
+}
+
+function highlightCells(){
+	var tiles= new Array(5)
+	tiles[0]="x4y3";
+	tiles[1]="x5y3";
+	tiles[2]="x6y3";
+	tiles[3]="x5y4";
+	tiles[4]="x5y2"; 
+	
+	jQuery.each( tiles, function(index, item){
+		$("#" + item + " img").attr("src","img/highlight.png");
 	});
 }
