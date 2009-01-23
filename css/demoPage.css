@@ -1,7 +1,16 @@
 #messages {
-	display:block;
+	width:220px;
 	background-color:Beige;
 	margin:1em;
 	padding:1em;
+	float:left;
+}
+
+#messagesHistory{
+	width:220px;
+	background-color:Beige;
+	margin:1em;
+	padding:1em;
+	float:right;
 }
 
