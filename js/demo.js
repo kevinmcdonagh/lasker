@@ -1,7 +1,7 @@
 /**
  * @author kevin
  */
-
+ 
 $(document).ready(function(){
 	getCoOrdinatesOfCurrentTile();
 	getCoOrdinatesOfCurrentTileOnClick();
@@ -10,8 +10,9 @@ $(document).ready(function(){
 function getCoOrdinatesOfCurrentTileOnClick()
 {
     $("#customwarsboard td").live("click", function(){
-		addToMsgs(this.id)
-		highlightCells();
+		addToMsgs(this.id + " ClickNo: " + window.clickCount)
+		highlightCells(["x4y3", "x5y3", "x6y3", "x5y4", "x5y2"]);
+		window.clickCount = window.clickCount+1;
     });
 }
 
@@ -33,14 +34,7 @@ function clrMsgs(){
 	$("#messages p").remove();
 }
 
-function highlightCells(){
-	var tiles= new Array(5)
-	tiles[0]="x4y3";
-	tiles[1]="x5y3";
-	tiles[2]="x6y3";
-	tiles[3]="x5y4";
-	tiles[4]="x5y2"; 
-	
+function highlightCells(tiles){
 	jQuery.each( tiles, function(index, item){
 		$("#" + item + " img").attr("src","img/highlight.png");
 	});
