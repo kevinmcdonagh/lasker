@@ -10,8 +10,15 @@ $(document).ready(function(){
 function getCoOrdinatesOfCurrentTileOnClick()
 {
     $("#customwarsboard td").live("click", function(){
-		addToMsgs(this.id + " ClickNo: " + window.clickCount)
-		highlightCells(["x4y3", "x5y3", "x6y3", "x5y4", "x5y2"]);
+		addToMsgHist(this.id + " ClickNo: " + window.clickCount)
+		var tileSet = new Array();
+		tileSet["x4y3"] = "img/highlight.png";
+		tileSet["x5y3"] = "img/highlight.png";
+		tileSet["x6y3"] = "img/highlight.png";
+		tileSet["x5y4"] = "img/highlight.png";
+		tileSet["x5y2"] = "img/highlight.png";
+		
+		changeTileImg(tileSet);
 		window.clickCount = window.clickCount+1;
     });
 }
@@ -30,12 +37,16 @@ function addToMsgs(msg){
 	$("#messages").append("<p>" + msg + "</p>");
 }
 
+function addToMsgHist(msg){
+	$("#messagesHistory").append("<p>" + msg + "</p>");
+}
+
 function clrMsgs(){
 	$("#messages p").remove();
 }
 
-function highlightCells(tiles){
-	jQuery.each( tiles, function(index, item){
-		$("#" + item + " img").attr("src","img/highlight.png");
-	});
+function changeTileImg(tiles){
+	for(tileCoOrds in tiles) {
+		$("#" + tileCoOrds + " img").attr("src", tiles[tileCoOrds]);
+	}
 }
