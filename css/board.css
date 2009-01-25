@@ -15,6 +15,11 @@ th {
 	text-align:center;
 }
 
+td {
+	height:16px;
+	width:16px;
+}
+
 thead tr{
 	line-height:1;
 }

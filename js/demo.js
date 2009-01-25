@@ -12,11 +12,8 @@ function getCoOrdinatesOfCurrentTileOnClick()
     $("#customwarsboard td").live("click", function(){
 		addToMsgHist(this.id + " ClickNo: " + window.clickCount)
 		var tileSet = new Array();
+		tileSet["x4y2"] = "img/highlight.png";
 		tileSet["x4y3"] = "img/highlight.png";
-		tileSet["x5y3"] = "img/highlight.png";
-		tileSet["x6y3"] = "img/highlight.png";
-		tileSet["x5y4"] = "img/highlight.png";
-		tileSet["x5y2"] = "img/highlight.png";
 		
 		changeTileImg(tileSet);
 		window.clickCount = window.clickCount+1;
@@ -47,6 +44,7 @@ function clrMsgs(){
 
 function changeTileImg(tiles){
 	for(tileCoOrds in tiles) {
-		$("#" + tileCoOrds + " img").attr("src", tiles[tileCoOrds]);
+		$("#" + tileCoOrds).empty();
+		$("#" + tileCoOrds).append("<img src='" + tiles[tileCoOrds] + "' />" );
 	}
 }
