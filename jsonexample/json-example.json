@@ -1,18 +1,10 @@
 { 
-  "menu": "File", 
-  "commands": [ 
+  "tileSet": [ 
       {
-          "title": "New", 
-          "action":"CreateDoc"
+          "x4y3": "img/highlight.png"
       }, 
       {
-          "title": "Open", 
-          "action": "OpenDoc"
-      }, 
-      {
-          "title": "Close",
-          "action": "CloseDoc"
+          "x4y2": "img/highlight.png"
       }
    ] 
 }
-
