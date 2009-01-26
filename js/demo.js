@@ -3,16 +3,21 @@
  */
  
 $(document).ready(function(){
-	highlightTileOnClick();
+	highlightAllowedMoveOnClick();
 	showCoOrdinatesOnTileHover();
 });
 
-function highlightTileOnClick()
+function highlightAllowedMoveOnClick()
 {
     $("#customwarsboard td").live("click", function(){
 		showMoveType(this.id);
+		highlightClickedTile(this);
 		logClick(this.id);
     });
+}
+
+function highlightClickedTile(tile){
+	$(tile).addClass('active');
 }
 
 function showCoOrdinatesOnTileHover()
