@@ -20,12 +20,9 @@ function loadJSON(fname)
 		{
 			if (xhr.status != 404) 
 			{
-				document.getElementById("zone").innerHTML = "found";
-				var data=eval("(" + xhr.responseText + ")");
-				document.getElementById("zone").innerHTML = "Menu " + data.menu + "<br>";
-				for(i = 0; i < 3; i++)
-				{
-					document.getElementById("zone").innerHTML += "&nbsp;" + data.commands[i].title + ': ' + data.commands[i].action + "<br>";
+				var response=eval("(" + xhr.responseText + ")");		
+				for(tileCoOrds in response) {
+					document.getElementById("zone").innerHTML += "&nbsp;" +  tileCoOrds + " : " + response[tileCoOrds] + "<br/>";
 				}
 			} 
 			else 
@@ -41,23 +38,21 @@ function loadJSON(fname)
 
 </script>
 	<title>Ajax Get JSON Demo</title></head><div FirebugVersion="1.3.0" style="display: none;" id="_firebugConsole"></div><body bgcolor="#ffffff">
-<p><font size="+3">Ajax JSON Demo - Get a Menu</font></p>
+<p><font size="+3">Ajax Get JSON Demo</font></p>
 <hr>
 <form name="ajax" method="post" action="">
 			
   <p>
-    <input value=" Click to load the JSON menu file " onclick="loadJSON('json-example.json')" type="button">
+    <input value=" Click to load the JSON menu file " onclick="loadJSON('move1.json')" type="button">
   </p>
 
 </form>
 	
 
 
-<div id="zone">ajax-json-menu.json not found</div>
+<div id="zone"></div>
 
 <p><br>
-  <a href="http://www.xul.fr/ajax-json-menu.json">View the JSON file</a> </p>
+  <a href="move1.json">View the JSON file</a> </p>
 <br>
-<hr>
-(c) 2006 - <a href="http://www.xul.fr/" target="_parent">Xul.fr</a> 
 </body></html>
