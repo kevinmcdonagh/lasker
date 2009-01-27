@@ -3,6 +3,11 @@
  */
  
 $(document).ready(function(){
+
+	$(window).bind("ajaxError", function() {
+		addToMsgHist("Ajax request unsuccessful");
+	}); 
+
 	highlightAllowedMoveOnClick();
 	showCoOrdinatesOnTileHover();
 });
@@ -15,7 +20,7 @@ function highlightAllowedMoveOnClick()
     });
 	
 	$("#customwarsboard td").live("click", function(){
-		showMoveType(this.id);
+		loadJSONmove('../fixture/move1.json');
 		updateCurrentHighlightedTile(this);
 		logClick(this.id);
     });
@@ -26,9 +31,7 @@ function updateCurrentHighlightedTile(tile){
 	$(tile).addClass('active');
 }
 
-
-function showCoOrdinatesOnTileHover()
-{
+function showCoOrdinatesOnTileHover(){
 	$("#customwarsboard td").hover(function(event){
 		addToMsgs(this.id)
 		currentXY = this.id;
@@ -46,7 +49,6 @@ function logClick(msg){
 	window.clickCount = window.clickCount+1;
 }
 
-
 function addToMsgHist(msg){
 	$("#messagesHistory").append("<p>" + msg + "</p>");
 }
@@ -58,22 +60,21 @@ function clrMsgs(){
 function changeTileImg(tiles){
 	for(tileCoOrds in tiles) {
 		$("#" + tileCoOrds).empty();
-		$("#" + tileCoOrds).append("<img class='highlight' src='" + tiles[tileCoOrds] + "' />" );
+		$("#" + tileCoOrds).append("<img class='"+ tiles[tileCoOrds] +"' src='../../img/" + tiles[tileCoOrds] + ".png' />" );
 	}
 }
 
-function showMoveType(clickedTileId){
-	
-	var tileSet = new Array();
-	var piece = $("#" + clickedTileId + " > img");
-	var pieceType = $(piece).attr('class').split(' '); 
-	
-	switch (pieceType[0]) {
-		case ("pawn"): 		
-			tileSet["x4y2"] = "../../img/highlight.png";
-			tileSet["x4y3"] = "../../img/highlight.png";
-		break;
-	}
-	
-	changeTileImg(tileSet);
+function loadJSONmove(fname){
+
+	$.getJSON(fname,
+        function(response){
+			var tileSet = new Array();
+			
+			for(move in response.move) {
+				tileSet[response.move[move].coOrds] = response.activity;	
+			}
+		
+			changeTileImg(tileSet);			
+        });
 }
+
