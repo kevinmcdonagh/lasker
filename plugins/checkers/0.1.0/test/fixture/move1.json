@@ -1,0 +1,20 @@
+{ 
+	"activePlayer": "black",
+	"activity":"highlight",
+	"preMove": null,
+	"move":	[
+		{
+			"coOrds":"x6y3",
+			"bg": "white",
+			"unit": null,
+			"plr": null
+		},
+		{
+			"coOrds":"x4y3",
+			"bg": "white",
+			"unit": null,
+			"plr": null
+		}
+	],
+	"postMove":null
+}
