@@ -1,0 +1,20 @@
+{ 
+	"activePlayer": "black",
+	"activity":"replace",
+	"preMove": null,
+	"move":	[
+		{
+			"coOrds":"x4y3",
+			"bg": "white",
+			"unit": "pawn",
+			"plr": "1"
+		},
+		{
+			"coOrds":"x4y1",
+			"bg": "white",
+			"unit": null,
+			"plr": null
+		}
+	],
+	"postMove":"unHighlight"
+}
