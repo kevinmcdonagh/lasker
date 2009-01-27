@@ -9,16 +9,23 @@ $(document).ready(function(){
 
 function highlightAllowedMoveOnClick()
 {
-    $("#customwarsboard td").live("click", function(){
+    $("div").live("click", function(){
+		$(".active").removeClass('active');
+		$("img.highlight").remove();
+    });
+	
+	$("#customwarsboard td").live("click", function(){
 		showMoveType(this.id);
-		highlightClickedTile(this);
+		updateCurrentHighlightedTile(this);
 		logClick(this.id);
     });
 }
 
-function highlightClickedTile(tile){
+function updateCurrentHighlightedTile(tile){
+	$(".active").removeClass('active');
 	$(tile).addClass('active');
 }
+
 
 function showCoOrdinatesOnTileHover()
 {
@@ -51,7 +58,7 @@ function clrMsgs(){
 function changeTileImg(tiles){
 	for(tileCoOrds in tiles) {
 		$("#" + tileCoOrds).empty();
-		$("#" + tileCoOrds).append("<img src='" + tiles[tileCoOrds] + "' />" );
+		$("#" + tileCoOrds).append("<img class='highlight' src='" + tiles[tileCoOrds] + "' />" );
 	}
 }
 
