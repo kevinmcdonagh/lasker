@@ -11,8 +11,9 @@
 		<script type="text/javascript" src="../../../../../main/js/demo.js"></script>
 		<script type="text/javascript" src="../../../../../main/lib/jqueryui/jquery-ui-personalized-1.6rc5.min.js"></script>		
 		<script type="text/javascript">
-			var clickCount;
+			var clickCount, moveCount;
 			clickCount=0;
+			moveCount=0;
 		</script>
     </head>
     <body>
@@ -161,6 +162,11 @@
 					</tr>  
 		        </tbody>     
 	 	</table>
+		<div>
+			<form>
+				<input type="button" value="next >>" id="btnNextMove"/>
+			</form>
+		</div>
 		<div id="happyPath">
 			<h2>Happy Path</h2>
 			<p>x4y1</p>

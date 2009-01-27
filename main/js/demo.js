@@ -24,6 +24,11 @@ function highlightAllowedMoveOnClick()
 		updateCurrentHighlightedTile(this);
 		logClick(this.id);
     });
+	
+	$("#btnNextMove").live("click", function(){
+		window.moveCount = window.moveCount+1;		
+		loadJSONmove('../fixture/move'+ window.moveCount + '.json');
+    });
 }
 
 function updateCurrentHighlightedTile(tile){
@@ -58,10 +63,16 @@ function clrMsgs(){
 }
 
 function changeTileImg(tiles){
+	
 	for(tileCoOrds in tiles) {
 		$("#" + tileCoOrds).empty();
-		$("#" + tileCoOrds).append("<img class='"+ tiles[tileCoOrds] +"' src='../../img/" + tiles[tileCoOrds] + ".png' />" );
+
+		if(tiles[tileCoOrds] != "" && tiles[tileCoOrds] != null){
+			$("#" + tileCoOrds).append("<img class='"+ tiles[tileCoOrds] +"' src='../../img/" + tiles[tileCoOrds] + ".png' />" );
+		}
+		
 	}
+	
 }
 
 function loadJSONmove(fname){
@@ -70,8 +81,20 @@ function loadJSONmove(fname){
         function(response){
 			var tileSet = new Array();
 			
-			for(move in response.move) {
-				tileSet[response.move[move].coOrds] = response.activity;	
+			if(response.activity == "highlight"){
+				for(move in response.move) {
+					tileSet[response.move[move].coOrds] = response.activity;	
+				}
+			}
+			
+			if(response.activity == "replace"){
+				$.each(response.move, function(index, moveItem){
+					if(moveItem.unit != "" && moveItem.unit != null){
+						tileSet[response.move[index].coOrds] = response.activePlayer + "/" + response.move[index].unit;	
+					}else{
+						tileSet[response.move[index].coOrds] = null;	
+					}
+				});
 			}
 		
 			changeTileImg(tileSet);			
