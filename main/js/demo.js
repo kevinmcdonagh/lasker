@@ -63,8 +63,8 @@ function showMoveType(clickedTileId){
 	
 	switch (pieceType[0]) {
 		case ("pawn"): 		
-			tileSet["x4y2"] = "img/highlight.png";
-			tileSet["x4y3"] = "img/highlight.png";
+			tileSet["x4y2"] = "../../img/highlight.png";
+			tileSet["x4y3"] = "../../img/highlight.png";
 		break;
 	}
 	
