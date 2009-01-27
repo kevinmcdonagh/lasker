@@ -18,11 +18,11 @@ function loadJSON(fname)
 	}); 
 
 	$.getJSON(fname,
-	        function(data){
-	          for(tileCoOrds in data) {
-					$("#zone").append("&nbsp;" +  tileCoOrds + " : " + data[tileCoOrds] + "<br/>");
-				}
-	        });
+        function(data){
+          for(tileCoOrds in data) {
+				$("#zone").append("&nbsp;" +  tileCoOrds + " : " + data[tileCoOrds] + "<br/>");
+			}
+        });
 }
 
 
@@ -34,7 +34,7 @@ function loadJSON(fname)
 <form name="ajax" method="post" action="">
 			
   <p>
-    <input value=" Click to load the JSON menu file " onclick="loadJSON('move1.json')" type="button">
+    <input value=" Click to load the JSON menu file " onclick="loadJSON('jsonexample1.json')" type="button">
   </p>
 
 </form>
