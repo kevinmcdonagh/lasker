@@ -1,5 +1,5 @@
 { 
-	"activePlayer": "black",
+	"activePlayer": "p1",
 	"activity":"highlight",
 	"preMove": null,
 	"move":	[
