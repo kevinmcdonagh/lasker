@@ -29,6 +29,11 @@ function highlightAllowedMoveOnClick()
 		window.moveCount = window.moveCount+1;		
 		loadJSONmove('../fixture/move'+ window.moveCount + '.json');
     });
+	
+	$("#btnLastMove").live("click", function(){
+		window.moveCount = window.moveCount-1;		
+		loadJSONmove('../fixture/move'+ window.moveCount + '.json');
+    });
 }
 
 function updateCurrentHighlightedTile(tile){
