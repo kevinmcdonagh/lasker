@@ -1,5 +1,13 @@
 { 
 	"activePlayer": "p2",
+	"activeUnit": [
+		{
+			"coOrds":"x6y6",
+			"bg": "white",
+			"unit": "knight",
+			"plr": "p2"
+		}
+	],	
 	"activity":"highlight",
 	"preMove": null,
 	"move":	[

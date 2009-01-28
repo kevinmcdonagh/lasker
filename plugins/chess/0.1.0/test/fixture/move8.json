@@ -1,5 +1,6 @@
 { 
 	"activePlayer": "p2",
+	"activeUnit": null,	
 	"activity":"replace",
 	"preMove": null,
 	"move":	[
