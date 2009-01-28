@@ -20,19 +20,21 @@ function highlightAllowedMoveOnClick()
     });
 	
 	$("#customwarsboard td").live("click", function(){
-		loadJSONmove('../fixture/move1.json');
+		loadJSONmove('../fixture/1/move1.json');
 		updateCurrentHighlightedTile(this);
 		logClick(this.id);
     });
 	
 	$("#btnNextMove").live("click", function(){
 		window.moveCount = window.moveCount+1;		
-		loadJSONmove('../fixture/move'+ window.moveCount + '.json');
+		loadJSONmove('../fixture/1/move'+ window.moveCount + '.json');
     });
 	
 	$("#btnLastMove").live("click", function(){
-		window.moveCount = window.moveCount-1;		
-		loadJSONmove('../fixture/move'+ window.moveCount + '.json');
+		if(window.moveCount > 1){
+			window.moveCount = window.moveCount-1;		
+			loadJSONmove('../fixture/1/move'+ window.moveCount + '.json');
+		}
     });
 }
 
@@ -99,7 +101,11 @@ function loadJSONmove(fname){
 				}
 				
 				for(move in response.move) {
-					tileSet[response.move[move].coOrds] = response.activity;	
+					if(response.move[move].unit == null || response.move[move].unit == "" ){
+						tileSet[response.move[move].coOrds] = response.activity;
+					}else{
+						tileSet[response.move[move].coOrds] =  response.move[move].plr + "/" + response.move[move].unit;
+					}
 				}
 			}
 			

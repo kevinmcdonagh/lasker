@@ -1,0 +1,28 @@
+{ 
+	"activePlayer": "p1",
+	"activeUnit": [
+		{
+			"coOrds":"x7y1",
+			"bg": "black",
+			"unit": "pawn",
+			"plr": "p1"
+		}
+	],	
+	"activity":"highlight",
+	"preMove": null,
+	"move":	[
+		{
+			"coOrds":"x7y2",
+			"bg": "black",
+			"unit": null,
+			"plr": null
+		},
+		{
+			"coOrds":"x7y3",
+			"bg": "white",
+			"unit": null,
+			"plr": null
+		}
+	],
+	"postMove":null
+}
