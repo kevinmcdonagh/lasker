@@ -4,13 +4,13 @@
 	"preMove": null,
 	"move":	[
 		{
-			"coOrds":"x4y3",
+			"coOrds":"x4y2",
 			"bg": "white",
 			"unit": null,
 			"plr": null
 		},
 		{
-			"coOrds":"x4y2",
+			"coOrds":"x4y3",
 			"bg": "black",
 			"unit": null,
 			"plr": null

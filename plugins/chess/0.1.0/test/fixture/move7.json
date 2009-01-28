@@ -1,0 +1,20 @@
+{ 
+	"activePlayer": "p2",
+	"activity":"highlight",
+	"preMove": null,
+	"move":	[
+		{
+			"coOrds":"x7y5",
+			"bg": "black",
+			"unit": null,
+			"plr": null
+		},
+		{
+			"coOrds":"x5y5",
+			"bg": "black",
+			"unit": null,
+			"plr": null
+		}
+	],
+	"postMove":null
+}
