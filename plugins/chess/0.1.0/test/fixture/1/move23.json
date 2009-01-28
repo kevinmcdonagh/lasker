@@ -1,0 +1,46 @@
+{ 
+	"activePlayer": "p2",
+	"activeUnit": [
+		{
+			"coOrds":"x2y7",
+			"bg": "white",
+			"unit": "bishop",
+			"plr": "p2"
+		}
+	],	
+	"activity":"highlight",
+	"preMove": null,
+	"move":	[
+		{
+			"coOrds":"x3y6",
+			"bg": "white",
+			"unit": null,
+			"plr": null
+		},
+		{
+			"coOrds":"x4y5",
+			"bg": "white",
+			"unit": null,
+			"plr": null
+		},
+		{
+			"coOrds":"x5y4",
+			"bg": "white",
+			"unit": null,
+			"plr": null
+		},
+		{
+			"coOrds":"x6y3",
+			"bg": "white",
+			"unit": null,
+			"plr": null
+		},
+		{
+			"coOrds":"x7y2",
+			"bg": "black",
+			"unit": "pawn",
+			"plr": "p1"
+		}
+	],
+	"postMove":null
+}

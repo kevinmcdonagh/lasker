@@ -2,7 +2,7 @@
 	"activePlayer": "p2",
 	"activeUnit": [
 		{
-			"coOrds":"x6y6",
+			"coOrds":"x6y7",
 			"bg": "white",
 			"unit": "knight",
 			"plr": "p2"

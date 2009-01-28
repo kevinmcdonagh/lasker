@@ -16,6 +16,18 @@
 			"bg": "white",
 			"unit": null,
 			"plr": null
+		},
+		{
+			"coOrds":"x5y2",
+			"bg": "white",
+			"unit": null,
+			"plr": null
+		},
+		{
+			"coOrds":"x7y2",
+			"bg": "white",
+			"unit": null,
+			"plr": null
 		}
 	],
 	"postMove":null
