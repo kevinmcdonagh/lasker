@@ -1,20 +1,20 @@
 { 
 	"activePlayer": "p2",
-	"activity":"replace",
+	"activity":"highlight",
 	"preMove": null,
 	"move":	[
 		{
-			"coOrds":"x4y4",
+			"coOrds":"x3y5",
 			"bg": "black",
-			"unit": "pawn",
+			"unit": null,
 			"plr": null
 		},
 		{
-			"coOrds":"x4y6",
-			"bg": "black",
+			"coOrds":"x3y4",
+			"bg": "white",
 			"unit": null,
 			"plr": null
 		}
 	],
-	"postMove":"unHighlight"
+	"postMove":null
 }
