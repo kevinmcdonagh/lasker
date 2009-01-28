@@ -87,11 +87,14 @@ function loadJSONmove(fname){
 			var tileSet = new Array();
 			
 			if(response.activity == "highlight"){
+
 				//Add active
 				if(response.activeUnit != "" && response.activeUnit != null){
 					$(".active").removeClass('active');
 					$.each(response.activeUnit, function(index, unitItem){
 						$("#" + response.activeUnit[index].coOrds).addClass('active');
+						$("#" + response.activeUnit[index].coOrds).empty();
+						$("#" + response.activeUnit[index].coOrds).append("<img class='"+ response.activeUnit[index].unit +"' src='../../img/" + response.activePlayer + "/" + response.activeUnit[index].unit + ".png' />" );
 					});
 				}
 				
