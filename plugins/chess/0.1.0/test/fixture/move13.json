@@ -1,6 +1,14 @@
 { 
 	"activePlayer": "p1",
 	"activity":"highlight",
+	"activeUnit": [
+		{
+			"coOrds":"x5y0",
+			"bg": "white",
+			"unit": "bishop",
+			"plr": "p1"
+		}
+	],	
 	"preMove": null,
 	"move":	[
 		{

@@ -87,12 +87,21 @@ function loadJSONmove(fname){
 			var tileSet = new Array();
 			
 			if(response.activity == "highlight"){
+				//Add active
+				if(response.activeUnit != "" && response.activeUnit != null){
+					$(".active").removeClass('active');
+					$.each(response.activeUnit, function(index, unitItem){
+						$("#" + response.activeUnit[index].coOrds).addClass('active');
+					});
+				}
+				
 				for(move in response.move) {
 					tileSet[response.move[move].coOrds] = response.activity;	
 				}
 			}
 			
 			if(response.activity == "replace"){
+				//Add image
 				$.each(response.move, function(index, moveItem){
 					if(moveItem.unit != "" && moveItem.unit != null){
 						tileSet[response.move[index].coOrds] = response.activePlayer + "/" + response.move[index].unit;	

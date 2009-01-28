@@ -1,5 +1,13 @@
 { 
 	"activePlayer": "p2",
+	"activeUnit": [
+		{
+			"coOrds":"x4y6",
+			"bg": "black",
+			"unit": "pawn",
+			"plr": "p2"
+		}
+	],	
 	"activity":"highlight",
 	"preMove": null,
 	"move":	[
