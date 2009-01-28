@@ -4,14 +4,14 @@
 	"preMove": null,
 	"move":	[
 		{
-			"coOrds":"x4y4",
-			"bg": "black",
+			"coOrds":"x3y4",
+			"bg": "white",
 			"unit": "pawn",
 			"plr": null
 		},
 		{
-			"coOrds":"x4y6",
-			"bg": "black",
+			"coOrds":"x3y6",
+			"bg": "white",
 			"unit": null,
 			"plr": null
 		}

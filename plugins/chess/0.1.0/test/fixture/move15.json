@@ -1,0 +1,38 @@
+{ 
+	"activePlayer": "p2",
+	"activity":"highlight",
+	"preMove": null,
+	"move":	[
+		{
+			"coOrds":"x4y6",
+			"bg": "black",
+			"unit": null,
+			"plr": null
+		},
+		{
+			"coOrds":"x3y5",
+			"bg": "black",
+			"unit": null,
+			"plr": null
+		},
+		{
+			"coOrds":"x2y4",
+			"bg": "black",
+			"unit": null,
+			"plr": null
+		},
+		{
+			"coOrds":"x1y3",
+			"bg": "black",
+			"unit": null,
+			"plr": null
+		},
+		{
+			"coOrds":"x0y2",
+			"bg": "black",
+			"unit": null,
+			"plr": null
+		}
+	],
+	"postMove":null
+}
