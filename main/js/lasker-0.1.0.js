@@ -71,9 +71,13 @@ function clrMsgs(){
 
 function changeTileImg(tiles){
 	
+	
 	for(tileCoOrds in tiles) {
 		$("#" + tileCoOrds).empty();
 
+		
+		//This should iterate over a collection of tiles (moves) and then choose the images based on the attributes of the move. 
+				
 		if(tiles[tileCoOrds] != "" && tiles[tileCoOrds] != null){
 			$("#" + tileCoOrds).append("<img class='"+ tiles[tileCoOrds] +"' src='../../img/" + tiles[tileCoOrds] + ".png' />" );
 		}
@@ -99,6 +103,9 @@ function loadJSONmove(fname){
 						$("#" + response.activeUnit[index].coOrds).append("<img class='"+ response.activeUnit[index].unit +"' src='../../img/" + response.activePlayer + "/" + response.activeUnit[index].unit + ".png' />" );
 					});
 				}
+				
+				// All the manual image weaving should be replaced here with just passing the move into the changeTileImg function
+				// The response should then be dealt with in somewhere different.
 				
 				for(move in response.move) {
 					if(response.move[move].unit == null || response.move[move].unit == "" ){
