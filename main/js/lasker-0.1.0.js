@@ -95,34 +95,34 @@ function loadJSONmove(fname){
 			if(response.activity == "highlight"){
 
 				//Add active
-				if(response.activeUnit != "" && response.activeUnit != null){
+				if(response.actingUnit != "" && response.actingUnit != null){
 					$(".active").removeClass('active');
-					$.each(response.activeUnit, function(index, unitItem){
-						$("#" + response.activeUnit[index].coOrds).addClass('active');
-						$("#" + response.activeUnit[index].coOrds).empty();
-						$("#" + response.activeUnit[index].coOrds).append("<img class='"+ response.activeUnit[index].unit +"' src='../../img/" + response.activePlayer + "/" + response.activeUnit[index].unit + ".png' />" );
+					$.each(response.actingUnit, function(index, unitItem){
+						$("#" + response.actingUnit[index].coOrds).addClass('active');
+						$("#" + response.actingUnit[index].coOrds).empty();
+						$("#" + response.actingUnit[index].coOrds).append("<img class='"+ response.actingUnit[index].unit +"' src='../../img/" + response.actingPlayer + "/" + response.actingUnit[index].unit + ".png' />" );
 					});
 				}
 				
 				// All the manual image weaving should be replaced here with just passing the move into the changeTileImg function
 				// The response should then be dealt with in somewhere different.
 				
-				for(move in response.move) {
-					if(response.move[move].unit == null || response.move[move].unit == "" ){
-						tileSet[response.move[move].coOrds] = response.activity;
+				for(move in response.tiles) {
+					if(response.tiles[move].unit == null || response.tiles[move].unit == "" ){
+						tileSet[response.tiles[move].coOrds] = response.activity;
 					}else{
-						tileSet[response.move[move].coOrds] =  response.move[move].plr + "/" + response.move[move].unit;
+						tileSet[response.tiles[move].coOrds] =  response.tiles[move].plr + "/" + response.tiles[move].unit;
 					}
 				}
 			}
 			
 			if(response.activity == "replace"){
 				//Add image
-				$.each(response.move, function(index, moveItem){
+				$.each(response.tiles, function(index, moveItem){
 					if(moveItem.unit != "" && moveItem.unit != null){
-						tileSet[response.move[index].coOrds] = response.activePlayer + "/" + response.move[index].unit;	
+						tileSet[response.tiles[index].coOrds] = response.actingPlayer + "/" + response.tiles[index].unit;	
 					}else{
-						tileSet[response.move[index].coOrds] = null;	
+						tileSet[response.tiles[index].coOrds] = null;	
 					}
 				});
 			}

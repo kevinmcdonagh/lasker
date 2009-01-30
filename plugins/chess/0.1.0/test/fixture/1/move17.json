@@ -1,6 +1,6 @@
 { 
-	"activePlayer": "p1",
-	"activeUnit": [
+	"actingPlayer": "p1",
+	"actingUnit": [
 		{
 			"coOrds":"x6y0",
 			"bg": "white",
@@ -10,7 +10,7 @@
 	],	
 	"activity":"highlight",
 	"preMove": null,
-	"move":	[
+	"tiles":	[
 		{
 			"coOrds":"x4y1",
 			"bg": "white",

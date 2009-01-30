@@ -26,10 +26,10 @@ function loadJSON(fname)
 
 function printMove(entry){
 			
-			if(entry.activePlayer == null){
+			if(entry.actingPlayer == null){
 				$("#zone").append("Active Player=[empty]<br/>");
 			}else{
-				$("#zone").append("ActivePlayer=[" +  entry.activePlayer + "]<br/>");
+				$("#zone").append("ActivePlayer=[" +  entry.actingPlayer + "]<br/>");
 			}
 			
 			if(entry.activity == null){
@@ -44,35 +44,35 @@ function printMove(entry){
 				$("#zone").append("preMove=[" +  entry.preMove + "]<br/>");
 			}
 
-			if(entry.move == null){
-				$("#zone").append("move=[empty]<br/>");
+			if(entry.tiles == null){
+				$("#zone").append("tiles=[empty]<br/>");
 			}else{
 
-				for(move in entry.move) {
+				for(move in entry.tiles) {
 					$("#zone").append("Move=[" + move + "]:<br />");
 					
-					if(entry.move[move].coOrds == null){
+					if(entry.tiles[move].coOrds == null){
 						$("#zone").append("&nbsp; ref=[empty] (cannot be null)<br/>");
 					}else{
-						$("#zone").append("&nbsp; ref=[" +  entry.move[move].coOrds + "]<br/>");
+						$("#zone").append("&nbsp; ref=[" +  entry.tiles[move].coOrds + "]<br/>");
 					}
 
 					if(entry.move[move].coOrds == null){
 						$("#zone").append("&nbsp; bg=[empty] (cannot be null)<br/>");
 					}else{
-						$("#zone").append("&nbsp; bg=[" +  entry.move[move].bg + "]<br/>");
+						$("#zone").append("&nbsp; bg=[" +  entry.tiles[move].bg + "]<br/>");
 					}
 
-					if(entry.move[move].unit == null){
+					if(entry.tiles[move].unit == null){
 						$("#zone").append("&nbsp; unit=[empty]<br/>");
 					}else{
-						$("#zone").append("&nbsp; unit=[" +  entry.move[move].unit + "]<br/>");
+						$("#zone").append("&nbsp; unit=[" +  entry.tiles[move].unit + "]<br/>");
 					}
 
-					if(entry.move[move].plr == null){
+					if(entry.tiles[move].plr == null){
 						$("#zone").append("&nbsp; player=[empty]<br/>");
 					}else{
-						$("#zone").append("&nbsp; player=[" +  entry.move[move].plr + "]<br/>");
+						$("#zone").append("&nbsp; player=[" +  entry.tiles[move].plr + "]<br/>");
 					}
 				}
 			}
