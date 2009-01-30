@@ -7,5 +7,9 @@
 }
 
 .active {
-	background-color:red;
+	background-color:#99ff66;
+}
+
+.targetted {
+    background-color:#ff3333;
 }
