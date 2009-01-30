@@ -1,5 +1,13 @@
 { 
 	"actingPlayer": "p1",
+	"actingUnit": [
+	{
+			"coOrds":"x5y2",
+			"bg": "black",
+			"unit": "piece",
+			"occupant": "p1"
+	}
+	],
 	"activity":"highlight",
 	"preMove": null,
 	"tiles":	[
