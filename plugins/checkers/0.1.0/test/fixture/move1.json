@@ -1,8 +1,8 @@
 { 
-	"activePlayer": "p1",
+	"actingPlayer": "p1",
 	"activity":"highlight",
 	"preMove": null,
-	"move":	[
+	"tiles":	[
 		{
 			"coOrds":"x6y3",
 			"bg": "white",

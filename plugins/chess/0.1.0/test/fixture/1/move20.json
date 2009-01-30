@@ -1,9 +1,9 @@
 { 
-	"activePlayer": "p2",
-	"activeUnit": null,
+	"actingPlayer": "p2",
+	"actingUnit": null,
 	"activity":"replace",
 	"preMove": null,
-	"move":	[
+	"tiles":	[
 		{
 			"coOrds":"x3y4",
 			"bg": "white",
