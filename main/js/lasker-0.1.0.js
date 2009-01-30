@@ -76,7 +76,6 @@ function changeTileImg(tiles){
 		if(tiles[tileCoOrds] != "" && tiles[tileCoOrds] != null){
 			$("#" + tileCoOrds).append("<img class='"+ tiles[tileCoOrds] +"' src='../../img/" + tiles[tileCoOrds] + ".png' />" );
 		}
-		
 	}
 	
 }
@@ -96,55 +95,44 @@ function loadJSONmove(fname){
 }
 
 $.fn.highlightTiles = function(action){
-			var tileSet = new Array();
 
-			if(action.activity == "highlight"){
+		if(action.actingUnit != "" && action.actingUnit != null){
+			$(".active").removeClass('active');
+			$.each(action.actingUnit, function(index, actingUnit){
+				$("#" + actingUnit.coOrds).addClass('active');
+				$("#" + actingUnit.coOrds).empty();
+				$.fn.addUnitToCoOrds(actingUnit.coOrds, actingUnit.unit, action.actingPlayer, actingUnit.unit);
+			});
+		}
 
-				if(action.actingUnit != "" && action.actingUnit != null){
-					$(".active").removeClass('active');
-					$.each(action.actingUnit, function(index, unitItem){
-						$("#" + action.actingUnit[index].coOrds).addClass('active');
-						$("#" + action.actingUnit[index].coOrds).empty();
-						$.fn.addImgToCoOrds(action.actingUnit[index].coOrds, action.actingUnit[index].unit, action.actingPlayer, action.actingUnit[index].unit);
-					});
-				}
-
-
-				$.each(action.tiles, function(index, tile){
-					$("#" + tile.coOrds).empty();
-					
-					if(action.tiles[index].unit == null || action.tiles[tile].unit == "" ){
-						$("#" + action.tiles[index].coOrds).append("<img class='"+ action.activity +"' src='../../img/" + action.activity + ".png' />" );
-					}else{
-						$("#" + tile.coOrds).append("<img class='active' src='../../img/highlight.png' />" );
-					}					
-				});
-
-			}
+		$.each(action.tiles, function(index, tile){
+			$("#" + tile.coOrds).empty();
 			
-		
-
+			if(tile.unit == null || tile.unit == "" ){
+				$.fn.addActionToCoOrds(tile.coOrds, action.activity, action.activity);
+			}else{
+				$.fn.addActionToCoOrds(tile.coOrds, 'active', 'highlight');
+			}					
+		});
 };
 
 $.fn.replaceTiles = function(action){
-			var tileSet = new Array();
 
-			if(action.activity == "replace"){
-				//Add image
-				$.each(action.tiles, function(tileIndex, tile){
-					if(tile.unit != "" && tile.unit != null){
-						tileSet[action.tiles[tileIndex].coOrds] = action.actingPlayer + "/" + action.tiles[tileIndex].unit;
-					}else{
-						tileSet[action.tiles[tileIndex].coOrds] = null;
-					}
-				});
-			}
+			$.each(action.tiles, function(tileIndex, tile){
+				$("#" + tile.coOrds).empty();
+				if(tile.unit != "" && tile.unit != null){
+					$("#" + tile.coOrds).append("<img class='"+ tile.unit +"' src='../../img/" + action.actingPlayer + "/" + tile.unit + ".png' />" );
+				}
+			});
 
-			changeTileImg(tileSet);
 };
 
-$.fn.addImgToCoOrds = function (divCoOrds, imgClass, actingPlayer, actingUnit) {
-	$("#" + divCoOrds).append("<img class='"+ imgClass +"' src='../../img/" + actingPlayer + "/" + actingUnit + ".png' />" );
+$.fn.addUnitToCoOrds = function (idCoOrds, imgClass, actingPlayer, actingUnit) {
+	$("#" + idCoOrds).append("<img class='"+ imgClass +"' src='../../img/" + actingPlayer + "/" + actingUnit + ".png' />" );
+};
+
+$.fn.addActionToCoOrds = function (idCoOrds, imgClass, activity) {
+	$("#" + idCoOrds).append("<img class='"+ imgClass +"' src='../../img/" + activity + ".png' />" );
 };
 
 
