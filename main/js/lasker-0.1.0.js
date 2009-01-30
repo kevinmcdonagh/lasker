@@ -32,7 +32,7 @@ function highlightAllowedMoveOnClick()
 	
 	$("#btnLastMove").live("click", function(){
 		if(window.moveCount > 1){
-			window.moveCount = window.moveCount-1;		
+			window.moveCount = window.moveCount-1;
 			loadJSONmove('../fixture/1/move'+ window.moveCount + '.json');
 		}
     });
@@ -71,13 +71,8 @@ function clrMsgs(){
 
 function changeTileImg(tiles){
 	
-	
 	for(tileCoOrds in tiles) {
 		$("#" + tileCoOrds).empty();
-
-		
-		//This should iterate over a collection of tiles (moves) and then choose the images based on the attributes of the move. 
-				
 		if(tiles[tileCoOrds] != "" && tiles[tileCoOrds] != null){
 			$("#" + tileCoOrds).append("<img class='"+ tiles[tileCoOrds] +"' src='../../img/" + tiles[tileCoOrds] + ".png' />" );
 		}
@@ -87,47 +82,71 @@ function changeTileImg(tiles){
 }
 
 function loadJSONmove(fname){
-
 	$.getJSON(fname,
-        function(response){
-			var tileSet = new Array();
+        function(action){
 			
-			if(response.activity == "highlight"){
-
-				//Add active
-				if(response.actingUnit != "" && response.actingUnit != null){
-					$(".active").removeClass('active');
-					$.each(response.actingUnit, function(index, unitItem){
-						$("#" + response.actingUnit[index].coOrds).addClass('active');
-						$("#" + response.actingUnit[index].coOrds).empty();
-						$("#" + response.actingUnit[index].coOrds).append("<img class='"+ response.actingUnit[index].unit +"' src='../../img/" + response.actingPlayer + "/" + response.actingUnit[index].unit + ".png' />" );
-					});
-				}
-				
-				// All the manual image weaving should be replaced here with just passing the move into the changeTileImg function
-				// The response should then be dealt with in somewhere different.
-				
-				for(move in response.tiles) {
-					if(response.tiles[move].unit == null || response.tiles[move].unit == "" ){
-						tileSet[response.tiles[move].coOrds] = response.activity;
-					}else{
-						tileSet[response.tiles[move].coOrds] =  response.tiles[move].plr + "/" + response.tiles[move].unit;
-					}
-				}
+			if (action.activity == "highlight") {
+				$.fn.highlightTiles(action);
 			}
 			
-			if(response.activity == "replace"){
-				//Add image
-				$.each(response.tiles, function(index, moveItem){
-					if(moveItem.unit != "" && moveItem.unit != null){
-						tileSet[response.tiles[index].coOrds] = response.actingPlayer + "/" + response.tiles[index].unit;	
+			if (action.activity == "replace") {
+				$.fn.replaceTiles(action);
+			}
+		});
+}
+
+$.fn.highlightTiles = function(action){
+			var tileSet = new Array();
+
+			if(action.activity == "highlight"){
+
+				if(action.actingUnit != "" && action.actingUnit != null){
+					$(".active").removeClass('active');
+					$.each(action.actingUnit, function(index, unitItem){
+						$("#" + action.actingUnit[index].coOrds).addClass('active');
+						$("#" + action.actingUnit[index].coOrds).empty();
+						$.fn.addImgToCoOrds(action.actingUnit[index].coOrds, action.actingUnit[index].unit, action.actingPlayer, action.actingUnit[index].unit);
+					});
+				}
+
+
+				$.each(action.tiles, function(index, tile){
+					$("#" + tile.coOrds).empty();
+					
+					if(action.tiles[index].unit == null || action.tiles[tile].unit == "" ){
+						$("#" + action.tiles[index].coOrds).append("<img class='"+ action.activity +"' src='../../img/" + action.activity + ".png' />" );
 					}else{
-						tileSet[response.tiles[index].coOrds] = null;	
+						$("#" + tile.coOrds).append("<img class='active' src='../../img/highlight.png' />" );
+					}					
+				});
+
+			}
+			
+		
+
+};
+
+$.fn.replaceTiles = function(action){
+			var tileSet = new Array();
+
+			if(action.activity == "replace"){
+				//Add image
+				$.each(action.tiles, function(tileIndex, tile){
+					if(tile.unit != "" && tile.unit != null){
+						tileSet[action.tiles[tileIndex].coOrds] = action.actingPlayer + "/" + action.tiles[tileIndex].unit;
+					}else{
+						tileSet[action.tiles[tileIndex].coOrds] = null;
 					}
 				});
 			}
-		
-			changeTileImg(tileSet);			
-        });
-}
+
+			changeTileImg(tileSet);
+};
+
+$.fn.addImgToCoOrds = function (divCoOrds, imgClass, actingPlayer, actingUnit) {
+	$("#" + divCoOrds).append("<img class='"+ imgClass +"' src='../../img/" + actingPlayer + "/" + actingUnit + ".png' />" );
+};
+
+
+
 

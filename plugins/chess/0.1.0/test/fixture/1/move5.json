@@ -5,7 +5,7 @@
 			"coOrds":"x1y0",
 			"bg": "white",
 			"unit": "knight",
-			"plr": "p1"
+			"occupant": "p1"
 		}
 	],	
 	"activity":"highlight",
@@ -15,13 +15,13 @@
 			"coOrds":"x0y2",
 			"bg": "black",
 			"unit": null,
-			"plr": null
+			"occupant": null
 		},
 		{
 			"coOrds":"x2y2",
 			"bg": "black",
 			"unit": null,
-			"plr": null
+			"occupant": null
 		}
 	],
 	"postMove":null

@@ -7,13 +7,13 @@
 			"coOrds":"x6y3",
 			"bg": "white",
 			"unit": null,
-			"plr": null
+			"occupant": null
 		},
 		{
 			"coOrds":"x4y3",
 			"bg": "white",
 			"unit": null,
-			"plr": null
+			"occupant": null
 		}
 	],
 	"postMove":null

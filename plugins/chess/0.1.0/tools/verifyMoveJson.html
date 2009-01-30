@@ -44,31 +44,31 @@ function printMove(entry){
 				$("#zone").append("tiles=[empty]<br/>");
 			}else{
 
-				for(move in entry.tiles) {
-					$("#zone").append("Move=[" + move + "]:<br />");
+				for(tile in entry.tiles) {
+					$("#zone").append("Move=[" + tile + "]:<br />");
 					
-					if(entry.tiles[move].coOrds == null){
+					if(entry.tiles[tile].coOrds == null){
 						$("#zone").append("&nbsp; ref=[empty] (cannot be null)<br/>");
 					}else{
-						$("#zone").append("&nbsp; ref=[" +  entry.tiles[move].coOrds + "]<br/>");
+						$("#zone").append("&nbsp; ref=[" +  entry.tiles[tile].coOrds + "]<br/>");
 					}
 
-					if(entry.tiles[move].coOrds == null){
+					if(entry.tiles[tile].coOrds == null){
 						$("#zone").append("&nbsp; bg=[empty] (cannot be null)<br/>");
 					}else{
-						$("#zone").append("&nbsp; bg=[" +  entry.tiles[move].bg + "]<br/>");
+						$("#zone").append("&nbsp; bg=[" +  entry.tiles[tile].bg + "]<br/>");
 					}
 
-					if(entry.tiles[move].unit == null){
+					if(entry.tiles[tile].unit == null){
 						$("#zone").append("&nbsp; unit=[empty]<br/>");
 					}else{
-						$("#zone").append("&nbsp; unit=[" +  entry.tiles[move].unit + "]<br/>");
+						$("#zone").append("&nbsp; unit=[" +  entry.tiles[tile].unit + "]<br/>");
 					}
 
-					if(entry.tiles[move].plr == null){
+					if(entry.tiles[tile].occupant == null){
 						$("#zone").append("&nbsp; player=[empty]<br/>");
 					}else{
-						$("#zone").append("&nbsp; player=[" +  entry.tiles[move].plr + "]<br/>");
+						$("#zone").append("&nbsp; player=[" +  entry.tiles[tile].occupant + "]<br/>");
 					}
 				}
 			}

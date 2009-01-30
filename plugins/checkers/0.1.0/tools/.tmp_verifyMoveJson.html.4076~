@@ -69,10 +69,10 @@ function printMove(entry){
 						$("#zone").append("&nbsp; unit=[" +  entry.tiles[move].unit + "]<br/>");
 					}
 
-					if(entry.tiles[move].plr == null){
+					if(entry.tiles[move].occupant == null){
 						$("#zone").append("&nbsp; player=[empty]<br/>");
 					}else{
-						$("#zone").append("&nbsp; player=[" +  entry.tiles[move].plr + "]<br/>");
+						$("#zone").append("&nbsp; player=[" +  entry.tiles[move].occupant + "]<br/>");
 					}
 				}
 			}
