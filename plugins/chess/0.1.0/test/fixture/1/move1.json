@@ -5,7 +5,7 @@
 			"coOrds":"x4y1",
 			"bg": "black",
 			"unit": "pawn",
-			"plr": "p1"
+			"occupant": "p1"
 		}
 	],
 	"activity":"highlight",
@@ -15,13 +15,13 @@
 			"coOrds":"x4y2",
 			"bg": "white",
 			"unit": null,
-			"plr": null
+			"occupant": null
 		},
 		{
 			"coOrds":"x4y3",
 			"bg": "black",
 			"unit": null,
-			"plr": null
+			"occupant": null
 		}
 	],
 	"postMove":null

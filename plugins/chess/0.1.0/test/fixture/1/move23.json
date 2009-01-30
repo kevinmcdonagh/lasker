@@ -5,7 +5,7 @@
 			"coOrds":"x2y7",
 			"bg": "white",
 			"unit": "bishop",
-			"plr": "p2"
+			"occupant": "p2"
 		}
 	],	
 	"activity":"highlight",
@@ -15,31 +15,31 @@
 			"coOrds":"x3y6",
 			"bg": "white",
 			"unit": null,
-			"plr": null
+			"occupant": null
 		},
 		{
 			"coOrds":"x4y5",
 			"bg": "white",
 			"unit": null,
-			"plr": null
+			"occupant": null
 		},
 		{
 			"coOrds":"x5y4",
 			"bg": "white",
 			"unit": null,
-			"plr": null
+			"occupant": null
 		},
 		{
 			"coOrds":"x6y3",
 			"bg": "white",
 			"unit": null,
-			"plr": null
+			"occupant": null
 		},
 		{
 			"coOrds":"x7y2",
 			"bg": "black",
 			"unit": "pawn",
-			"plr": "p1"
+			"occupant": "p1"
 		}
 	],
 	"postMove":null

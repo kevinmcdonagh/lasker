@@ -8,13 +8,13 @@
 			"coOrds":"x7y2",
 			"bg": "white",
 			"unit": "pawn",
-			"plr": null
+			"occupant": null
 		},
 		{
 			"coOrds":"x7y1",
 			"bg": "white",
 			"unit": null,
-			"plr": null
+			"occupant": null
 		}
 	],
 	"postMove":"unHighlight"

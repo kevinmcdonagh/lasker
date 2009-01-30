@@ -8,13 +8,13 @@
 			"coOrds":"x2y4",
 			"bg": "black",
 			"unit": "bishop",
-			"plr": null
+			"occupant": null
 		},
 		{
 			"coOrds":"x5y7",
 			"bg": "black",
 			"unit": null,
-			"plr": null
+			"occupant": null
 		}
 	],
 	"postMove":"unHighlight"
