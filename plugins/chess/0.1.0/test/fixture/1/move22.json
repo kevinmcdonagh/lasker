@@ -8,7 +8,7 @@
 			"coOrds":"x7y2",
 			"bg": "white",
 			"unit": "pawn",
-			"occupant": null
+			"occupant": "p1"
 		},
 		{
 			"coOrds":"x7y1",
