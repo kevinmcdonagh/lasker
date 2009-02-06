@@ -28,13 +28,22 @@ function highlightAllowedMoveOnClick()
 	$("#btnNextMove").live("click", function(){
 		window.moveCount = window.moveCount+1;		
 		loadJSONmove('../fixture/1/move'+ window.moveCount + '.json');
+		$("#moveNo").replaceWith("<span id='moveNo'>" + window.moveCount+ "</span>");
     });
 	
 	$("#btnLastMove").live("click", function(){
 		if(window.moveCount > 1){
 			window.moveCount = window.moveCount-1;
 			loadJSONmove('../fixture/1/move'+ window.moveCount + '.json');
+			$("#moveNo").replaceWith("<span id='moveNo'>" + window.moveCount+ "</span>");
+		}else{
+		
+			if(window.moveCount == 1){		
+				$("#moveNo").replaceWith("<span id='moveNo'>" + 0 + "</span>");
+			}
 		}
+		
+		
     });
 }
 
