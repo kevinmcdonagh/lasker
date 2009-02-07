@@ -126,13 +126,13 @@ $.fn.highlightTiles = function(action){
 };
 
 $.fn.replaceTiles = function(action){
-
     $.each(action.tiles, function(tileIndex, tile){
         $("#" + tile.coOrds).empty();
         if(tile.unit != "" && tile.unit != null){
             $("#" + tile.coOrds).append("<img class='"+ tile.unit +"' src='../../img/" + action.actingPlayer + "/" + tile.unit + ".png' />" );
         }
     });
+    $(".targetted").removeClass('targetted');
 
 };
 
