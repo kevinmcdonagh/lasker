@@ -1,20 +1,20 @@
 { 
 	"actingPlayer": "p2",
-	"actingUnit": null,	
+	"actingUnit": null,
 	"activity":"replace",
 	"preMove": null,
 	"tiles":	[
+		{
+			"coOrds":"x4y5",
+			"bg": "white",
+			"unit": "bishop",
+			"occupant": null
+		},
 		{
 			"coOrds":"x2y7",
 			"bg": "white",
 			"unit": null,
 			"occupant": null
-		},
-		{
-			"coOrds":"x4y5",
-			"bg": "white",
-			"unit": bishop,
-			"occupant": "p2"
 		}
 	],
 	"postMove":"unHighlight"
