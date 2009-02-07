@@ -5,15 +5,15 @@
 	"preMove": null,
 	"tiles":	[
 		{
-			"coOrds":"x3y4",
-			"bg": "white",
-			"unit": "pawn",
-			"occupant": null
-		},
-		{
 			"coOrds":"x3y6",
 			"bg": "white",
 			"unit": null,
+			"occupant": null
+		},
+		{
+			"coOrds":"x3y5",
+			"bg": "white",
+			"unit": "pawn",
 			"occupant": null
 		}
 	],
