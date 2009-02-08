@@ -18,7 +18,7 @@
 		}
 	],
 	"postMove": [ 
-		{"unHighlight":true},
-		{"check":true} 
+		{"unHighlight":"true"},
+		{"check": "true"} 
 	]
 }
