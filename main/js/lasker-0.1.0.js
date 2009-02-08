@@ -99,6 +99,10 @@ function changeTileImg(tiles){
 function loadJSONmove(fname){
     $.getJSON(fname,
         function(action){
+			
+			if(action.preMove != "" && action.preMove != null){
+				$.fn.preActions(action);
+			}
 
             if (action.activity == "highlight") {
                 $.fn.highlightTiles(action);
@@ -111,7 +115,30 @@ function loadJSONmove(fname){
             if (action.activity == "replace") {
                 $.fn.replaceTiles(action);
             }
+			
+			if(action.postMove != "" && action.postMove != null){
+				$.fn.postActions(action);
+			}
+			
         });
+}
+
+$.fn.preActions = function(action){
+}
+
+$.fn.postActions = function(action){
+	
+	$.each(action.postMove, function(index, postAction){
+		
+		if (postAction.check != "" && postAction.check != null) {
+			addToMsgHist("Check!");
+		}
+		
+		if (postAction.checkmate != "" && postAction.checkmate != null) {
+			addToMsgHist("Check Mate!");
+		}
+			
+	});
 }
 
 $.fn.highlightTiles = function(action){
@@ -134,6 +161,7 @@ $.fn.highlightTiles = function(action){
             $.fn.addUnitToCoOrds(tile.coOrds, 'targetted', tile.occupant, tile.unit);
         }
     });
+	
 };
 
 $.fn.highlightCastlingKing = function(action){
