@@ -10,6 +10,10 @@
 	background-color:#99ff66;
 }
 
+.secondary-active {
+	background-color:#FFFACD;
+}
+
 .targetted {
     background-color:#ff3333;
 }

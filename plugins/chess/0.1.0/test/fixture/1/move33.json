@@ -1,0 +1,28 @@
+{ 
+	"actingPlayer": "p1",
+	"actingUnit": [
+		{
+			"coOrds":"x2y1",
+			"bg": "white",
+			"unit": "pawn",
+			"occupant": "p1"
+		}
+	],	
+	"activity":"highlight",
+	"preMove": null,
+	"tiles":	[
+		{
+			"coOrds":"x2y2",
+			"bg": "black",
+			"unit": null,
+			"occupant": null
+		},
+		{
+			"coOrds":"x2y3",
+			"bg": "white",
+			"unit": null,
+			"occupant": null
+		}
+	],
+	"postMove":null
+}

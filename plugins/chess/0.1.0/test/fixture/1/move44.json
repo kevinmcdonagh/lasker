@@ -1,0 +1,33 @@
+{ 
+	"actingPlayer": "p2",
+	"actingUnit": null,
+	"activity":"replace",
+	"preMove": null,
+	"tiles":	[
+		{
+			"coOrds":"x6y7",
+			"bg": "white",
+			"unit": "king",
+			"occupant": "p2"
+		},
+		{
+			"coOrds":"x5y7",
+			"bg": "black",
+			"unit": "rook",
+			"occupant": "p2"
+		},
+		{
+			"coOrds":"x7y7",
+			"bg": "black",
+			"unit": null,
+			"occupant": null
+		},
+		{
+			"coOrds":"x4y7",
+			"bg": "white",
+			"unit": null,
+			"occupant": null
+		}
+	],
+	"postMove":"unHighlight"
+}

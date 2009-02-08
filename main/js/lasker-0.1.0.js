@@ -14,24 +14,26 @@ $(document).ready(function(){
 
 function highlightAllowedMoveOnClick()
 {
-    $("div").live("click", function(){
-		$(".active").removeClass('active');
-		$("img.highlight").remove();
-    });
 	
-	$("#customwarsboard td").live("click", function(){
-		loadJSONmove('../fixture/1/move1.json');
-		updateCurrentHighlightedTile(this);
-		logClick(this.id);
-    });
+//	$("#customwarsboard td").live("click", function(){
+//		cleanAnyVisualState();
+//		
+//		loadJSONmove('../fixture/1/move1.json');
+//		updateCurrentHighlightedTile(this);
+//		logClick(this.id);
+//    });
 	
 	$("#btnNextMove").live("click", function(){
+		cleanAnyOnScreenState();
+		
 		window.moveCount = window.moveCount+1;		
 		loadJSONmove('../fixture/1/move'+ window.moveCount + '.json');
 		$("#moveNo").replaceWith("<span id='moveNo'>" + window.moveCount+ "</span>");
     });
 	
 	$("#btnLastMove").live("click", function(){
+		cleanAnyOnScreenState();
+		
 		if(window.moveCount > 1){
 			window.moveCount = window.moveCount-1;
 			loadJSONmove('../fixture/1/move'+ window.moveCount + '.json');
@@ -45,6 +47,11 @@ function highlightAllowedMoveOnClick()
 		
 		
     });
+}
+
+function cleanAnyOnScreenState(){
+	$(".active").removeClass('active');
+	$("img.highlight").remove();
 }
 
 function updateCurrentHighlightedTile(tile){
@@ -97,6 +104,10 @@ function loadJSONmove(fname){
                 $.fn.highlightTiles(action);
             }
 
+            if (action.activity == "highlightCastlingKing") {
+                $.fn.highlightCastlingKing(action);
+            }
+			
             if (action.activity == "replace") {
                 $.fn.replaceTiles(action);
             }
@@ -121,6 +132,41 @@ $.fn.highlightTiles = function(action){
             $.fn.addActionToCoOrds(tile.coOrds, action.activity, action.activity);
         }else{
             $.fn.addUnitToCoOrds(tile.coOrds, 'targetted', tile.occupant, tile.unit);
+        }
+    });
+};
+
+$.fn.highlightCastlingKing = function(action){
+
+    if(action.actingUnit != "" && action.actingUnit != null){
+        $(".active").removeClass('active');
+        $.each(action.actingUnit, function(index, actingUnit){
+            $("#" + actingUnit.coOrds).addClass('active');
+            $("#" + actingUnit.coOrds).empty();
+            $.fn.addUnitToCoOrds(actingUnit.coOrds, actingUnit.unit, action.actingPlayer, actingUnit.unit);
+        });
+    }
+
+    $.each(action.tiles, function(index, tile){
+        $("#" + tile.coOrds).empty();
+
+        if(tile.unit == null || tile.unit == "" ){
+            $.fn.addActionToCoOrds(tile.coOrds, "highlight", "highlight");
+        }else{
+            $.fn.addUnitToCoOrds(tile.coOrds, 'targetted', tile.occupant, tile.unit);
+        }
+    });
+	
+	$.each(action.target, function(index, tile){
+        $("#" + tile.coOrds).empty();
+
+        if(tile.unit == null || tile.unit == "" ){
+            $.fn.addActionToCoOrds(tile.coOrds, "active", "highlight");
+        }else{
+            $.fn.addUnitToCoOrds(tile.coOrds, "active", tile.occupant, tile.unit);
+			$.each(tile.tiles, function(innerIndex, innerTile){
+				$.fn.addActionToCoOrds(innerTile.coOrds, "highlight", "secondary-highlight");
+			});
         }
     });
 };
