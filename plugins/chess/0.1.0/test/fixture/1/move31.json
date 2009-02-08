@@ -1,0 +1,46 @@
+{ 
+	"actingPlayer": "p2",
+	"actingUnit": [
+		{
+			"coOrds":"x2y5",
+			"bg": "white",
+			"unit": "knight",
+			"occupant": "p2"
+		}
+	],	
+	"activity":"highlight",
+	"preMove": null,
+	"tiles":	[
+		{
+			"coOrds":"x4y6",
+			"bg": "black",
+			"unit": null,
+			"occupant": null
+		},
+		{
+			"coOrds":"x1y7",
+			"bg": "black",
+			"unit": null,
+			"occupant": null
+		},
+		{
+			"coOrds":"x0y4",
+			"bg": "black",
+			"unit": null,
+			"occupant": null
+		},
+		{
+			"coOrds":"x1y3",
+			"bg": "black",
+			"unit": null,
+			"occupant": null
+		},
+		{
+			"coOrds":"x3y3",
+			"bg": "black",
+			"unit": null,
+			"occupant": null
+		}
+	],
+	"postMove":null
+}
