@@ -165,6 +165,7 @@ $.fn.highlightCastlingKing = function(action){
         }else{
             $.fn.addUnitToCoOrds(tile.coOrds, "active", tile.occupant, tile.unit);
 			$.each(tile.tiles, function(innerIndex, innerTile){
+		        $("#" + innerTile.coOrds).empty();
 				$.fn.addActionToCoOrds(innerTile.coOrds, "highlight", "secondary-highlight");
 			});
         }

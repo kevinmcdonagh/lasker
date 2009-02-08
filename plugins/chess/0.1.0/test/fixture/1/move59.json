@@ -1,0 +1,52 @@
+{ 
+	"actingPlayer": "p2",
+	"actingUnit": [
+		{
+			"coOrds":"x4y3",
+			"bg": "white",
+			"unit": "knight",
+			"occupant": "p2"
+		}
+	],	
+	"activity":"highlight",
+	"preMove": null,
+	"tiles":	[
+		{
+			"coOrds":"x5y5",
+			"bg": "black",
+			"unit": null,
+			"occupant": null
+		},
+		{
+			"coOrds":"x6y4",
+			"bg": "white",
+			"unit": null,
+			"occupant": null
+		},
+		{
+			"coOrds":"x6y2",
+			"bg": "black",
+			"unit": "pawn",
+			"occupant": "p1"
+		},
+		{
+			"coOrds":"x5y1",
+			"bg": "black",
+			"unit": "pawn",
+			"occupant": "p1"
+		},
+		{
+			"coOrds":"x3y1",
+			"bg": "black",
+			"unit": "bishop",
+			"occupant": "p1"
+		},
+		{
+			"coOrds":"x2y2",
+			"bg": "black",
+			"unit": null,
+			"occupant": null
+		}							
+	],
+	"postMove":null
+}
