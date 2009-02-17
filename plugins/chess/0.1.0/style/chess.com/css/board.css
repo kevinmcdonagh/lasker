@@ -1,0 +1,34 @@
+#col-first{
+	background:red;
+}
+#col-last{
+	background:red;
+}
+img{ 
+	display:block;
+}
+tr {
+	line-height: 0;
+}
+th {
+	width:30px;
+	text-align:center;
+}
+
+td {
+	height:30px;
+	width:30px;
+}
+
+thead tr{
+	line-height:1;
+}
+
+tfoot tr{
+	line-height:1				
+}
+
+#customwarsboard {
+	margin: 1em;
+}
+
