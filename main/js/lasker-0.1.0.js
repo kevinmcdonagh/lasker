@@ -1,7 +1,7 @@
 /**
  * @author kevin
  */
- 
+
 $(document).ready(function(){
 
 	$(window).bind("ajaxError", function() {
@@ -90,7 +90,7 @@ function changeTileImg(tiles){
 	for(tileCoOrds in tiles) {
 		$("#" + tileCoOrds).empty();
 		if(tiles[tileCoOrds] != "" && tiles[tileCoOrds] != null){
-			$("#" + tileCoOrds).append("<img class='"+ tiles[tileCoOrds] +"' src='../../img/" + tiles[tileCoOrds] + ".png' />" );
+			$("#" + tileCoOrds).append("<img class='"+ tiles[tileCoOrds] +"' src='../../style/lasker/img/" + tiles[tileCoOrds] + ".png' />" );
 		}
 	}
 	
@@ -204,7 +204,7 @@ $.fn.replaceTiles = function(action){
     $.each(action.tiles, function(tileIndex, tile){
         $("#" + tile.coOrds).empty();
         if(tile.unit != "" && tile.unit != null){
-            $("#" + tile.coOrds).append("<img class='"+ tile.unit +"' src='../../img/" + action.actingPlayer + "/" + tile.unit + ".png' />" );
+            $("#" + tile.coOrds).append("<img class='"+ tile.unit +"' src='../../style/lasker/img/" + action.actingPlayer + "/" + tile.unit + ".png' />" );
         }
     });
     $(".targetted").removeClass('targetted');
@@ -212,11 +212,11 @@ $.fn.replaceTiles = function(action){
 };
 
 $.fn.addUnitToCoOrds = function (idCoOrds, imgClass, actingPlayer, actingUnit) {
-	$("#" + idCoOrds).append("<img class='"+ imgClass +"' src='../../img/" + actingPlayer + "/" + actingUnit + ".png' />" );
+	$("#" + idCoOrds).append("<img class='"+ imgClass +"' src='../../style/lasker/img/" + actingPlayer + "/" + actingUnit + ".png' />" );
 };
 
 $.fn.addActionToCoOrds = function (idCoOrds, imgClass, activity) {
-	$("#" + idCoOrds).append("<img class='"+ imgClass +"' src='../../img/" + activity + ".png' />" );
+	$("#" + idCoOrds).append("<img class='"+ imgClass +"' src='../../style/lasker/img/" + activity + ".png' />" );
 };
 
 
