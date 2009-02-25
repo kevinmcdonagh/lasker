@@ -8,6 +8,7 @@ $(document).ready(function(){
 		addToMsgHist("Ajax request unsuccessful");
 	}); 
 
+	snapToMovableTiles();
 	highlightAllowedMoveOnClick();
 	showCoOrdinatesOnTileHover();
 });
@@ -47,6 +48,14 @@ function highlightAllowedMoveOnClick()
 		
 		
     });
+}
+
+function snapToMovableTiles(){
+	$("img").draggable({ 
+		snap: 'td',
+		cursorAt: { cursor: 'move', top: 0, left: 0 },
+		containment: '#customwarsboard'
+	});
 }
 
 function cleanAnyOnScreenState(){
