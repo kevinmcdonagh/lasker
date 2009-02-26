@@ -2,6 +2,11 @@
  * @author kevin
  */
 
+$.fn.fileFormat = ".png";
+$.fn.styleName = "lasker";
+$.fn.stylesDir = "../../style";
+$.fn.jsonLocation = "../fixture";
+
 $(document).ready(function(){
 
 	$(window).bind("ajaxError", function() {
@@ -28,7 +33,7 @@ function highlightAllowedMoveOnClick()
 		cleanAnyOnScreenState();
 		
 		window.moveCount = window.moveCount+1;		
-		loadJSONmove('../fixture/1/move'+ window.moveCount + '.json');
+		loadJSONmove($.fn.jsonLocation + "/1/move"+ window.moveCount + '.json');
 		$("#moveNo").replaceWith("<span id='moveNo'>" + window.moveCount+ "</span>");
     });
 	
@@ -37,7 +42,7 @@ function highlightAllowedMoveOnClick()
 		
 		if(window.moveCount > 1){
 			window.moveCount = window.moveCount-1;
-			loadJSONmove('../fixture/1/move'+ window.moveCount + '.json');
+			loadJSONmove($.fn.jsonLocation + "/1/move"+ window.moveCount + '.json');
 			$("#moveNo").replaceWith("<span id='moveNo'>" + window.moveCount+ "</span>");
 		}else{
 		
@@ -99,7 +104,7 @@ function changeTileImg(tiles){
 	for(tileCoOrds in tiles) {
 		$("#" + tileCoOrds).empty();
 		if(tiles[tileCoOrds] != "" && tiles[tileCoOrds] != null){
-			$("#" + tileCoOrds).append("<img class='"+ tiles[tileCoOrds] +"' src='../../style/lasker/img/" + tiles[tileCoOrds] + ".png' />" );
+			$("#" + tileCoOrds).append("<img class='"+ tiles[tileCoOrds] +"' src='"+ $.fn.stylesDir +"/"+$.fn.styleName +"/img/" + tiles[tileCoOrds] + $.fn.fileFormat + "' />");
 		}
 	}
 	
@@ -210,10 +215,11 @@ $.fn.highlightCastlingKing = function(action){
 };
 
 $.fn.replaceTiles = function(action){
-    $.each(action.tiles, function(tileIndex, tile){
+    
+	$.each(action.tiles, function(tileIndex, tile){
         $("#" + tile.coOrds).empty();
         if(tile.unit != "" && tile.unit != null){
-            $("#" + tile.coOrds).append("<img class='"+ tile.unit +"' src='../../style/lasker/img/" + action.actingPlayer + "/" + tile.unit + ".png' />" );
+            $("#" + tile.coOrds).append("<img class='"+ tile.unit +"' src='"+ $.fn.stylesDir +"/"+$.fn.styleName +"/img/" + action.actingPlayer + "/" + tile.unit + $.fn.fileFormat + "' />");
         }
     });
     $(".targetted").removeClass('targetted');
@@ -221,11 +227,11 @@ $.fn.replaceTiles = function(action){
 };
 
 $.fn.addUnitToCoOrds = function (idCoOrds, imgClass, actingPlayer, actingUnit) {
-	$("#" + idCoOrds).append("<img class='"+ imgClass +"' src='../../style/lasker/img/" + actingPlayer + "/" + actingUnit + ".png' />" );
+	$("#" + idCoOrds).append("<img class='"+ imgClass +"' src='"+ $.fn.stylesDir +"/"+$.fn.styleName +"/img/" + actingPlayer + "/" + actingUnit + $.fn.fileFormat + "' />");
 };
 
 $.fn.addActionToCoOrds = function (idCoOrds, imgClass, activity) {
-	$("#" + idCoOrds).append("<img class='"+ imgClass +"' src='../../style/lasker/img/" + activity + ".png' />" );
+	$("#" + idCoOrds).append("<img class='"+ imgClass +"' src='"+ $.fn.stylesDir +"/"+$.fn.styleName +"/img/" + activity + $.fn.fileFormat + "' />");
 };
 
 
