@@ -2,7 +2,7 @@
 	"actingPlayer": "p1",
 	"actingUnit": [
 		{
-			"coOrds":"x2y1",
+			"coOrds":"x02y01",
 			"bg": "white",
 			"unit": "pawn",
 			"occupant": "p1"
@@ -12,13 +12,13 @@
 	"preMove": null,
 	"tiles":	[
 		{
-			"coOrds":"x2y2",
+			"coOrds":"x02y02",
 			"bg": "black",
 			"unit": null,
 			"occupant": null
 		},
 		{
-			"coOrds":"x2y3",
+			"coOrds":"x02y03",
 			"bg": "white",
 			"unit": null,
 			"occupant": null

@@ -3,7 +3,7 @@
 	"activity":"highlight",
 	"actingUnit": [
 		{
-			"coOrds":"x5y0",
+			"coOrds":"x05y00",
 			"bg": "white",
 			"unit": "bishop",
 			"occupant": "p1"
@@ -12,13 +12,13 @@
 	"preMove": null,
 	"tiles":	[
 		{
-			"coOrds":"x6y1",
+			"coOrds":"x06y01",
 			"bg": "white",
 			"unit": null,
 			"occupant": null
 		},
 		{
-			"coOrds":"x7y2",
+			"coOrds":"x07y02",
 			"bg": "white",
 			"unit": null,
 			"occupant": null

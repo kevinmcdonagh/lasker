@@ -5,25 +5,25 @@
 	"preMove": null,
 	"tiles":	[
 		{
-			"coOrds":"x6y7",
+			"coOrds":"x06y07",
 			"bg": "white",
 			"unit": "king",
 			"occupant": "p2"
 		},
 		{
-			"coOrds":"x5y7",
+			"coOrds":"x05y07",
 			"bg": "black",
 			"unit": "rook",
 			"occupant": "p2"
 		},
 		{
-			"coOrds":"x7y7",
+			"coOrds":"x07y07",
 			"bg": "black",
 			"unit": null,
 			"occupant": null
 		},
 		{
-			"coOrds":"x4y7",
+			"coOrds":"x04y07",
 			"bg": "white",
 			"unit": null,
 			"occupant": null

@@ -2,7 +2,7 @@
 	"actingPlayer": "p2",
 	"actingUnit": [
 		{
-			"coOrds":"x5y5",
+			"coOrds":"x05y05",
 			"bg": "black",
 			"unit": "knight",
 			"occupant": "p2"
@@ -12,36 +12,36 @@
 	"preMove": null,
 	"tiles":	[
 		{
-			"coOrds":"x3y6",
+			"coOrds":"x03y06",
 			"bg": "white",
 			"unit": null,
 			"occupant": null
 		},
 		{
-			"coOrds":"x4y7",
+			"coOrds":"x04y07",
 			"bg": "white",
 			"unit": null,
 			"occupant": null
 		},
 		{
-			"coOrds":"x7y4",
+			"coOrds":"x07y04",
 			"bg": "white",
 			"unit": null,
 			"occupant": null
 		},
 		{
-			"coOrds":"x6y3",
+			"coOrds":"x06y03",
 			"bg": "white",
 			"unit": null,
 			"occupant": null
 		},
 		{
-			"coOrds":"x4y3",
+			"coOrds":"x04y03",
 			"bg": "white",
 			"unit": null,
 			"occupant": null
 		},
-		{	"coOrds":"x3y4",
+		{	"coOrds":"x03y04",
 			"bg": "white",
 			"unit": "pawn",
 			"occupant": "p1"

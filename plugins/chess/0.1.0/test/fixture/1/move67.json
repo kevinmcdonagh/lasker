@@ -2,7 +2,7 @@
 	"actingPlayer": "p2",
 	"actingUnit": [
 		{
-			"coOrds":"x0y7",
+			"coOrds":"x00y07",
 			"bg": "white",
 			"unit": "rook",
 			"occupant": "p2"
@@ -12,25 +12,25 @@
 	"preMove": null,
 	"tiles":	[
 		{
-			"coOrds":"x1y7",
+			"coOrds":"x01y07",
 			"bg": "black",
 			"unit": null,
 			"occupant": null
 		},
 		{
-			"coOrds":"x2y7",
+			"coOrds":"x02y07",
 			"bg": "white",
 			"unit": null,
 			"occupant": null
 		},
 		{
-			"coOrds":"x3y7",
+			"coOrds":"x03y07",
 			"bg": "white",
 			"unit": null,
 			"occupant": null
 		},
 		{
-			"coOrds":"x4y7",
+			"coOrds":"x04y07",
 			"bg": "white",
 			"unit": null,
 			"occupant": null
