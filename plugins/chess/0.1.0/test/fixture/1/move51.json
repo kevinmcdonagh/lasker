@@ -2,7 +2,7 @@
 	"actingPlayer": "p2",
 	"actingUnit": [
 		{
-			"coOrds":"x3y6",
+			"coOrds":"x03y06",
 			"bg": "black",
 			"unit": "queen",
 			"occupant": "p2"
@@ -12,55 +12,55 @@
 	"preMove": null,
 	"tiles":	[
 		{
-			"coOrds":"x2y7",
+			"coOrds":"x02y07",
 			"bg": "white",
 			"unit": null,
 			"occupant": null
 		},
 		{
-			"coOrds":"x3y7",
+			"coOrds":"x03y07",
 			"bg": "black",
 			"unit": null,
 			"occupant": null
 		},
 		{
-			"coOrds":"x4y7",
+			"coOrds":"x04y07",
 			"bg": "white",
 			"unit": null,
 			"occupant": null
 		},
 		{
-			"coOrds":"x4y6",
+			"coOrds":"x04y06",
 			"bg": "black",
 			"unit": null,
 			"occupant": null
 		},
 		{
-			"coOrds":"x4y5",
+			"coOrds":"x04y05",
 			"bg": "white",
 			"unit": null,
 			"occupant": null
 		},
 		{
-			"coOrds":"x2y5",
+			"coOrds":"x02y05",
 			"bg": "white",
 			"unit": null,
 			"occupant": null
 		},
 		{
-			"coOrds":"x1y4",
+			"coOrds":"x01y04",
 			"bg": "white",
 			"unit": null,
 			"occupant": null
 		},
 		{
-			"coOrds":"x0y3",
+			"coOrds":"x00y03",
 			"bg": "white",
 			"unit": null,
 			"occupant": null
 		},
 		{
-			"coOrds":"x5y4",
+			"coOrds":"x05y04",
 			"bg": "white",
 			"unit": "knight",
 			"occupant": "p1"

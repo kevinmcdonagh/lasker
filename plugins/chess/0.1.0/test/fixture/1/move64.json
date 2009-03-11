@@ -5,13 +5,13 @@
 	"preMove": null,
 	"tiles":	[
 		{
-			"coOrds":"x7y4",
+			"coOrds":"x07y04",
 			"bg": "white",
 			"unit": "queen",
 			"occupant": "p2"
 		},
 		{
-			"coOrds":"x5y4",
+			"coOrds":"x05y04",
 			"bg": "white",
 			"unit": null,
 			"occupant": null

@@ -2,7 +2,7 @@
 	"actingPlayer": "p1",
 	"actingUnit": [
 		{
-			"coOrds":"x2y0",
+			"coOrds":"x02y00",
 			"bg": "black",
 			"unit": "bishop",
 			"occupant": "p1"
@@ -12,31 +12,31 @@
 	"preMove": null,
 	"tiles":	[
 		{
-			"coOrds":"x3y1",
+			"coOrds":"x03y01",
 			"bg": "black",
 			"unit": null,
 			"occupant": null
 		},
 		{
-			"coOrds":"x4y2",
+			"coOrds":"x04y02",
 			"bg": "black",
 			"unit": null,
 			"occupant": null
 		},
 		{
-			"coOrds":"x5y3",
+			"coOrds":"x05y03",
 			"bg": "black",
 			"unit": null,
 			"occupant": null
 		},
 		{
-			"coOrds":"x6y4",
+			"coOrds":"x06y04",
 			"bg": "black",
 			"unit": null,
 			"occupant": null
 		},
 		{
-			"coOrds":"x7y5",
+			"coOrds":"x07y05",
 			"bg": "black",
 			"unit": null,
 			"occupant": null
