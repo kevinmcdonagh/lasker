@@ -32,3 +32,88 @@ tfoot tr{
 	margin: 1em;
 }
 
+.building-small, .building-large, .building-largest, .terrain{
+	position:absolute;
+	display:block;
+	z-index:99999;	
+}
+
+.building-small{
+	width:16px;
+	height:16px;
+}
+
+.building-large{
+	width:16px;
+	height:21px;	
+}
+
+.building-largest{
+	width:16px;
+	height:31px;	
+}
+
+.terrain{
+	width:16px;
+	height:21px;	
+}
+
+
+
+
+
+
+.x06y12{
+	margin:143px 0 0 128px;
+}
+
+.x07y09{
+	margin:190px 0 0 144px;
+}
+
+.x09y08{
+	margin:206px 0 0 176px;
+}
+
+.x09y12{
+	margin:143px 0 0 176px;
+}
+
+.x05y07-large{
+	margin:216px 0 0 112px;		
+}
+
+.x05y08-large{
+	margin:202px 0 0 112px;		
+}
+
+.x07y06-large{
+	margin:238px 0 0 144px;	
+}
+
+.x07y04-large{
+	margin:268px 0 0 144px;
+}
+
+.x06y05-large{
+	margin:251px 0 0 128px;		
+}
+
+.x08y05-large{
+	margin:249px 0 0 160px;
+}
+
+
+.x06y12-large{
+	margin:139px 0 0 128px;
+}
+
+.x09y12-large{
+	margin:139px 0 0 176px;
+}
+
+
+
+.x07y06-largest{
+	margin:224px 0 0 144px;	
+}
