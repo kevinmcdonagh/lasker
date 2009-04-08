@@ -12,190 +12,76 @@ td {
 	margin: 1em;
 }
 
-.building-small{
+#lasker .building-small{
 	width:16px;
 	height:16px;
 }
 
-.building-large{
+#lasker .building-large{
 	width:16px;
 	height:21px;	
 }
 
-.building-largest{
+#lasker .building-largest{
 	width:16px;
 	height:31px;	
 }
 
-.terrain{
+#lasker .terrain{
 	width:16px;
 	height:21px;	
 }
 
-.x06y12{
-	margin:143px 0 0 128px;
-}
 
-.x07y09{
-	margin:190px 0 0 144px;
-}
+#lasker .x23y14-largest		{ margin:97px 0 0 400px;  }
+#lasker .x07y06-largest		{ margin:224px 0 0 144px; }
 
-.x09y08{
-	margin:206px 0 0 176px;
-}
+#lasker .x21y14-large		{ margin:104px 0 0 368px; }
 
-.x09y12{
-	margin:143px 0 0 176px;
-}
+#lasker .x25y13-large		{ margin:122px 0 0 432px; }
 
-.x14y11{
-	margin:158px 0 0 256px;
-}
+#lasker .x06y12-large		{ margin:138px 0 0 128px; }
+#lasker .x09y12-large		{ margin:138px 0 0 176px; }
+#lasker .x14y12-large		{ margin:138px 0 0 256px; }
+#lasker .x19y12-large		{ margin:138px 0 0 336px; }
+#lasker .x22y12-large		{ margin:138px 0 0 384px; }
 
-.x19y05{
-	margin:254px 0 0 336px;	
-}
+#lasker .x15y11-large		{ margin:156px 0 0 272px; }
 
-.x21y10{
-	margin:174px 0 0 368px;	
-}
+#lasker .x11y09-large		{ margin:188px 0 0 208px; }
+#lasker .x16y09-large		{ margin:188px 0 0 288px; }
+#lasker .x17y09-large		{ margin:188px 0 0 304px; }
+#lasker .x20y09-large		{ margin:188px 0 0 352px; }
+#lasker .x25y09-large		{ margin:188px 0 0 432px; }
 
-.x24y11{
-	margin:158px 0 0 416px;	
-}
+#lasker .x05y08-large		{ margin:202px 0 0 112px; }
+#lasker .x16y08-large		{ margin:202px 0 0 288px; }
+#lasker .x19y08-large		{ margin:202px 0 0 336px; }
+#lasker .x20y08-large		{ margin:202px 0 0 352px; }
 
-.x05y07-large{
-	margin:217px 0 0 112px;		
-}
+#lasker .x05y07-large		{ margin:218px 0 0 112px; }
+#lasker .x12y07-large		{ margin:218px 0 0 224px; }
+#lasker .x24y07-large		{ margin:218px 0 0 416px; }
 
-.x05y08-large{
-	margin:202px 0 0 112px;		
-}
+#lasker .x07y06-large		{ margin:234px 0 0 144px; }
+#lasker .x10y06-large		{ margin:234px 0 0 192px; }
+#lasker .x13y06-large		{ margin:234px 0 0 240px; }
 
-.x07y06-large{
-	margin:238px 0 0 144px;	
-}
+#lasker .x06y05-large		{ margin:251px 0 0 128px; }
+#lasker .x08y05-large		{ margin:249px 0 0 160px; }
+#lasker .x12y05-large		{ margin:252px 0 0 224px; }
+#lasker .x17y05-large		{ margin:252px 0 0 304px; }
+#lasker .x22y05-large		{ margin:252px 0 0 384px; }
 
-.x07y04-large{
-	margin:268px 0 0 144px;
-}
+#lasker .x07y04-large		{ margin:268px 0 0 144px; }
+#lasker .x20y04-large		{ margin:268px 0 0 352px; }
+#lasker .x22y04-large		{ margin:268px 0 0 384px; }
 
-.x06y05-large{
-	margin:251px 0 0 128px;		
-}
-
-.x08y05-large{
-	margin:249px 0 0 160px;
-}
-
-
-.x06y12-large{
-	margin:139px 0 0 128px;
-}
-
-.x09y12-large{
-	margin:139px 0 0 176px;
-}
-
-
-.x10y06-large{
-	margin:234px 0 0 192px;	
-}
-
-.x11y09-large{
-	margin:187px 0 0 208px;	
-}
-
-
-.x12y05-large{
-	margin:252px 0 0 224px;	
-}
-
-.x12y07-large{
-	margin:217px 0 0 224px;	
-}
-
-.x13y06-large{
-	margin:235px 0 0 240px;	
-}
-
-.x14y12-large{
-	margin:138px 0 0 256px;		
-}
-
-.x15y11-large{
-	margin:156px 0 0 272px;	
-}
-
-.x16y08-large{
-	margin:202px 0 0 288px;	
-}
-
-.x16y09-large{
-	margin:188px 0 0 288px;	
-}
-
-.x17y05-large{
-	margin:252px 0 0 304px;	
-}
-
-.x17y09-large{
-	margin:186px 0 0 304px;	
-}
-
-.x19y08-large{
-	margin:203px 0 0 336px;	
-}
-
-.x19y12-large{
-	margin:139px 0 0 336px;	
-}
-
-.x20y04-large{
-	margin:268px 0 0 352px;	
-}
-
-.x20y08-large{
-	margin:203px 0 0 352px;	
-}
-
-.x20y09-large{
-	margin:188px 0 0 352px;	
-}
-
-.x21y14-large{
-	margin:104px 0 0 368px;	
-}
-
-.x22y04-large{
-	margin:268px 0 0 384px;	
-}
-
-.x22y05-large{
-	margin:252px 0 0 384px;	
-}
-
-.x22y12-large{
-	margin:138px 0 0 384px;	
-}
-
-.x24y07-large{
-	margin:218px 0 0 416px;	
-}
-
-.x25y09-large{
-	margin:187px 0 0 432px;	
-}
-
-.x25y13-large{
-	margin:122px 0 0 432px;	
-}
-
-
-.x07y06-largest{
-	margin:224px 0 0 144px;	
-}
-
-.x23y14-largest{
-	margin:97px 0 0 400px;	
-}
+#lasker .x06y12				{ margin:143px 0 0 128px; }
+#lasker .x09y12				{ margin:143px 0 0 176px; }
+#lasker .x24y11				{ margin:158px 0 0 416px; }
+#lasker .x14y11				{ margin:158px 0 0 256px; }
+#lasker .x21y10				{ margin:174px 0 0 368px; }
+#lasker .x07y09				{ margin:190px 0 0 144px; }
+#lasker .x09y08				{ margin:206px 0 0 176px; }
+#lasker .x19y05				{ margin:254px 0 0 336px; }
