@@ -19,9 +19,3 @@ thead tr{
 tfoot tr{
 	line-height:1				
 }
-
-.building-small, .building-large, .building-largest, .terrain{
-	position:absolute;
-	display:block;
-	z-index:99999;	
-}
