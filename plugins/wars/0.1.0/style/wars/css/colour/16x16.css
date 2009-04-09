@@ -51,7 +51,7 @@ td.sea_beachmound_tl_cont				{ background-image:url(../../img/sea_beachmound_tl_
 td.sea_beachmound_t						{ background-image:url(../../img/sea_beachmound_t.png) }
 
 /* Overlays */
-div.hill-large 							{ background-image:url(../../img/plain_hill_large.png) } 
+div.hill-l	 							{ background-image:url(../../img/plain_hill_large.png) } 
 div.building-grey						{ background-image:url(../../img/building_grey.png) } 
 div.building-red 						{ background-image:url(../../img/building_red.png) } 
 div.building-blue 						{ background-image:url(../../img/building_blue.png) } 
