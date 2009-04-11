@@ -45,6 +45,7 @@ function highlightAllowedMoveOnClick()
 		}else{
 		
 			if(window.moveCount == 1){		
+				window.moveCount = 0;
 				$("#moveNo").replaceWith("<span id='moveNo'>" + 0 + "</span>");
 			}
 		}
