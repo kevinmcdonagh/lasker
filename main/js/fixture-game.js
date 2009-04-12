@@ -163,15 +163,6 @@ function showCoOrdinatesOnTileHover(){
 	}, function(){
 		clrMsgs();
 	});
-	
-	$("#gameboard-overlays a").hover(function(event){
-		var coords = $(this).attr("class").split(' ')[0].split('-')[0];
-
-		addToMsgs(coords)
-		currentXY = coords;
-	}, function(){
-		clrMsgs();
-	});
 }
 
 function addToMsgs(msg){
