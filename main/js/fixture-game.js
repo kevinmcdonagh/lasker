@@ -14,17 +14,56 @@ $(document).ready(function(){
 	highlightAllowedMoveOnClick();
 	showCoOrdinatesOnTileHover();
 	
-	$('#block').nyroModal({	
-		bgColor: '#6699cc', 
+	$('#block-right').nyroModal({	
+		bgColor: 'none', 
 		'blocker': '#gameboard',
 		padding: 5,	
 	  	minWidth: 100,
-		minHeight: 100
-	});
+		minHeight: 100,
+		title: "kevin title",
+		css: { // Default CSS option for the nyroModal Div. Some will be overwritten or updated when using IE6
+			wrapper: {
+				top: '25%',
+				bottom: '75%',
+				right: '20%',
+				left: '80%'
+			},
+			loading: {
+				top: '25%',
+				bottom: '75%',
+				right: '20%',
+				left: '80%'
+			}
+		},
+		resizable:false
+	});	
+	
+	$('#block-left').nyroModal({	
+		bgColor: 'none', 
+		'blocker': '#gameboard',
+		padding: 5,	
+	  	minWidth: 100,
+		minHeight: 100,
+		title: "kevin title",
+		css: { // Default CSS option for the nyroModal Div. Some will be overwritten or updated when using IE6
+			wrapper: {
+				top: '25%',
+				bottom: '75%',
+				right: '80%',
+				left: '20%'
+			},
+			loading: {
+				top: '25%',
+				bottom: '75%',
+				right: '80%',
+				left: '20%'
+			}
+		},
+		resizable:false
+	});	
 	 
 	 
 });
-
 
 function highlightAllowedMoveOnClick()
 {
