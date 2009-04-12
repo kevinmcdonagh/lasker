@@ -62,7 +62,31 @@ $(document).ready(function(){
 		resizable:false
 	});	
 	
-	$('#menu-center').nyroModal({	
+	$('.base-p2').nyroModal({	
+		bgColor: 'none', 
+		'blocker': '#gameboard',
+		padding: 5,	
+	  	minWidth: 150,
+		minHeight: 100,
+		title: "kevin title",
+		css: { // Default CSS option for the nyroModal Div. Some will be overwritten or updated when using IE6
+			wrapper: {
+				top: '50%',
+				bottom: '50%',
+				right: '50%',
+				left: '50%'
+			},
+			loading: {
+				top: '50%',
+				bottom: '50%',
+				right: '50%',
+				left: '50%'
+			}
+		},
+		resizable:false
+	});	
+	
+	$('.base-p1').nyroModal({	
 		bgColor: 'none', 
 		'blocker': '#gameboard',
 		padding: 5,	
