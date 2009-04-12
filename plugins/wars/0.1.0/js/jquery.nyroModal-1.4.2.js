@@ -7,6 +7,10 @@
  *
  * $Date: 2009-02-19 (Thu, 19 Feb 2009) $
  * $version: 1.4.2
+ * 
+ * 	//LASKER-AMMEND - I have overridden the time it takes for the animation to dissappear to 0 instead of 350
+ * 
+ * 
  */
 jQuery(function($) {
 
@@ -1470,6 +1474,7 @@ jQuery(function($) {
 			});
 	}
 
+	//LASKER-AMMEND - I have overridden the time it takes for the animation to dissappear to 0 instead of 350
 	function hideContent(elts, settings, callback) {
 		elts.contentWrapper
 			.animate({
@@ -1477,7 +1482,7 @@ jQuery(function($) {
 				width: '50px',
 				marginTop: (-(25+settings.borderH)/2 + settings.marginScrollTop)+'px',
 				marginLeft: (-(25+settings.borderW)/2 + settings.marginScrollLeft)+'px'
-			}, {duration: 350, complete: function() {
+			}, {duration: 0, complete: function() {
 				elts.contentWrapper.hide();
 				callback();
 			}});
