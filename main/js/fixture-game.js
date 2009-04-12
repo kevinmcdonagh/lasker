@@ -1,7 +1,3 @@
-/**
- * @author kevin
- */
-
 $.fn.jsonLocation = "../fixture";
 
 $(document).ready(function(){
@@ -153,9 +149,27 @@ function highlightAllowedMoveOnClick()
 }
 
 function showCoOrdinatesOnTileHover(){
-	$("#customwarsboard td").hover(function(event){
+	$("#gameboard td").hover(function(event){
 		addToMsgs(this.id)
 		currentXY = this.id;
+	}, function(){
+		clrMsgs();
+	});
+	
+	$("#gameboard-overlays div").hover(function(event){
+		var coords = $(this).attr("class").split(' ')[0].split('-')[0];
+
+		addToMsgs(coords)
+		currentXY = coords;
+	}, function(){
+		clrMsgs();
+	});
+	
+	$("#gameboard-overlays a").hover(function(event){
+		var coords = $(this).attr("class").split(' ')[0].split('-')[0];
+
+		addToMsgs(coords)
+		currentXY = coords;
 	}, function(){
 		clrMsgs();
 	});
