@@ -8,7 +8,9 @@
 		<link rel="stylesheet" type="text/css" href="../../../../../main/css/boards/16x16.css" />
 		<link rel="stylesheet" type="text/css" href="../../style/wars/css/colour/16x16.css" />
 		<link rel="stylesheet" type="text/css" href="../../style/wars/css/demopage.css" />
+		<link rel="stylesheet" type="text/css" href="../../style/wars/css/nyroModal.css" />		
 		<script type="text/javascript" src="../../../../../main/lib/jquery-1.3.1.js"></script>
+		<script type="text/javascript" src="../../../../../plugins/wars/0.1.0/js/jquery.nyroModal-1.4.2.pack.js"></script>			
 		<script type="text/javascript" src="../../../../../main/js/lasker-0.1.0.js"></script>
 		<script type="text/javascript" src="../../../../../plugins/wars/0.1.0/js/actions.js"></script>		
 		<script type="text/javascript" src="../../../../../main/js/fixture-game.js"></script>	
@@ -26,7 +28,7 @@
 
     		<div id="lasker">
 			
-				<table id="customwarsboard" summary="An example playing field" cellpadding="0" cellspacing="0" >
+				<table id="gameboard" summary="An example playing field" cellpadding="0" cellspacing="0" >
 					<colgroup>  
 						<col id="col-key-first" />
 						<col id="col-key00" />  
@@ -897,6 +899,7 @@
 			<div class="x07y04-l hill-l"></div>			
 		</div>
 	</div>
+	<a href="demoSent.php" id="block" rev="modal">blocker Modal</a><br />
 	<div id="block2">
 		<div>
 			<h2>Move <span id="moveNo">0</span></h2>

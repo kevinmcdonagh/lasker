@@ -10,9 +10,19 @@ $(document).ready(function(){
 		addToMsgHist("Ajax request unsuccessful");
 	}); 
 
-	snapToMovableTiles();
+	//snapToMovableTiles();
 	highlightAllowedMoveOnClick();
 	showCoOrdinatesOnTileHover();
+	
+	$('#block').nyroModal({	
+		bgColor: '#6699cc', 
+		'blocker': '#gameboard',
+		padding: 5,	
+	  	minWidth: 100,
+		minHeight: 100
+	});
+	 
+	 
 });
 
 
@@ -27,6 +37,7 @@ function highlightAllowedMoveOnClick()
 //		logClick(this.id);
 //    });
 	
+	
 	$("#btnNextMove").live("click", function(){
 		cleanAnyOnScreenState();
 		
@@ -34,7 +45,7 @@ function highlightAllowedMoveOnClick()
 		loadJSONmove($.fn.jsonLocation + "/1/move"+ window.moveCount + '.json');
 		$("#moveNo").replaceWith("<span id='moveNo'>" + window.moveCount+ "</span>");
     });
-	
+
 	$("#btnLastMove").live("click", function(){
 		cleanAnyOnScreenState();
 		
