@@ -157,8 +157,7 @@ function showCoOrdinatesOnTileHover(){
 	});
 	
 	$("#gameboard-overlays div").hover(function(event){
-		var coords = $(this).attr("class").split(' ')[0].split('-')[0];
-
+		var coords = this.id.split('-')[0];
 		addToMsgs(coords)
 		currentXY = coords;
 	}, function(){

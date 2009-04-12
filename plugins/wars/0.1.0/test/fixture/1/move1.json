@@ -2,7 +2,7 @@
 	"actingPlayer": "p1",
 	"actingUnit": [
 		{
-			"coOrds":"x09y08",
+			"coOrds":"x24y11",
 			"bg": "black",
 			"unit": "pawn",
 			"occupant": "p1"
