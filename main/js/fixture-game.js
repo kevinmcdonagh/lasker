@@ -14,7 +14,7 @@ $(document).ready(function(){
 	highlightAllowedMoveOnClick();
 	showCoOrdinatesOnTileHover();
 	
-	$('#block-right').nyroModal({	
+	$('#menu-right').nyroModal({	
 		bgColor: 'none', 
 		'blocker': '#gameboard',
 		padding: 5,	
@@ -38,7 +38,7 @@ $(document).ready(function(){
 		resizable:false
 	});	
 	
-	$('#block-left').nyroModal({	
+	$('#menu-left').nyroModal({	
 		bgColor: 'none', 
 		'blocker': '#gameboard',
 		padding: 5,	
@@ -57,6 +57,30 @@ $(document).ready(function(){
 				bottom: '75%',
 				right: '80%',
 				left: '20%'
+			}
+		},
+		resizable:false
+	});	
+	
+	$('#menu-center').nyroModal({	
+		bgColor: 'none', 
+		'blocker': '#gameboard',
+		padding: 5,	
+	  	minWidth: 150,
+		minHeight: 100,
+		title: "kevin title",
+		css: { // Default CSS option for the nyroModal Div. Some will be overwritten or updated when using IE6
+			wrapper: {
+				top: '50%',
+				bottom: '50%',
+				right: '50%',
+				left: '50%'
+			},
+			loading: {
+				top: '50%',
+				bottom: '50%',
+				right: '50%',
+				left: '50%'
 			}
 		},
 		resizable:false
