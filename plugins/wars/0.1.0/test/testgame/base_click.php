@@ -9,15 +9,67 @@
 </head>
 <body>
 	<div>
-		<ul class="inventory">
-			<li class="nyroModalClose"><a href="#"><img src="../../style/wars/img/p1/unit/infantry.png" /> <span class="unit-type">Infantry</span><span class="unit-price">1000</span></a></li>		
-			<li class="nyroModalClose"><a href="#"><img src="../../style/wars/img/p1/unit/infantry_heavy.png" /><span class="unit-type">Mech</span><span class="unit-price">3000</span></a></li>		
-			<li class="nyroModalClose"><a href="#"><img src="../../style/wars/img/p1/unit/recon.png" /><span class="unit-type">Recon</span><span class="unit-price">4000</span></a></li>		
-			<li class="nyroModalClose"><a href="#"><img src="../../style/wars/img/p1/unit/tank.png" /><span class="unit-type">Tank</span><span class="unit-price">7000</span></a></li>		
-			<li class="nyroModalClose"><a href="#"><img src="../../style/wars/img/p1/unit/tank_medium.png" /><span class="unit-type">Md Tank</span><span class="unit-price">16000</span></a></li>		
-			<li class="nyroModalClose"><a href="#"><img src="../../style/wars/img/p1/unit/apc.png" /><span class="unit-type">APC</span><span class="unit-price">5000</span></a></li>		
-			<li class="nyroModalClose"><a href="#"><img src="../../style/wars/img/p1/unit/artillery.png" /><span class="unit-type">Artillery</span><span class="unit-price">6000</span></a></li>
-		</ul>
+		<table id="shop-inventory" summary="Red Base" cellpadding="0" cellspacing="0" >
+			
+			<colgroup class="item-profile" span="1">  
+				<col class="profile" />
+			</colgroup> 
+
+			<colgroup class="item-name" span="1">  			
+				<col class="name" />  
+			</colgroup> 
+			
+			<colgroup class="item-price" span="1">  			
+				<col class="price" />  
+			</colgroup> 
+			
+			
+			<thead>  
+				<tr>  
+					<th scope="col" class="col" class="item-profile">Item Image</th>  
+					<th scope="col" class="col" class="item-name">Item Name</th>  
+					<th scope="col" class="col" class="item-price">Item Price</th>  
+				</tr>  
+			</thead>
+			
+			<tbody>
+				<tr class="odd">  
+					<td><a class="nyroModalClose" href="#"><img src="../../style/wars/img/p1/unit/infantry.png" /></a></td>
+					<td><a class="nyroModalClose" href="#">Infantry</a></td>
+					<td>1000</td>
+				</tr>
+				<tr>  
+					<td><a class="nyroModalClose" href="#"><img src="../../style/wars/img/p1/unit/infantry_heavy.png" /></a></td>
+					<td><a class="nyroModalClose" href="#">Mech</a></td>
+					<td>3000</td>
+				</tr>
+				<tr class="odd">  
+					<td><a class="nyroModalClose" href="#"><img src="../../style/wars/img/p1/unit/recon.png" /></a></td>
+					<td><a class="nyroModalClose" href="#">Recon</a></td>
+					<td>4000</td>
+				</tr>
+				<tr>  
+					<td><a class="nyroModalClose" href="#"><img src="../../style/wars/img/p1/unit/tank.png" /></a></td>
+					<td><a class="nyroModalClose" href="#">Tank</a></td>
+					<td>7000</td>
+				</tr>
+				<tr class="odd">  
+					<td><a class="nyroModalClose" href="#"><img src="../../style/wars/img/p1/unit/tank_medium.png" /></a></td>
+					<td><a class="nyroModalClose" href="#">Md Tank</a></td>
+					<td>16000</td>
+				</tr>
+				<tr>  
+					<td><a class="nyroModalClose" href="#"><img src="../../style/wars/img/p1/unit/apc.png" /></a></td>
+					<td><a class="nyroModalClose" href="#">APC</a></td>
+					<td>5000</td>
+				</tr>
+				<tr class="odd">  
+					<td><a class="nyroModalClose" href="#"><img src="../../style/wars/img/p1/unit/artillery.png" /></a></td>
+					<td><a class="nyroModalClose" href="#">Artillery</a></td>
+					<td>6000</td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
 </body>
 </html>

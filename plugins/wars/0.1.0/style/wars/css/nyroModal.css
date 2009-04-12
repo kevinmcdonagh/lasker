@@ -1,14 +1,32 @@
-ul.inventory img, ul.inventory a, ul.inventory span {
-display:inline;
+#shop-inventory {
+	width:100%
 }
 
-ul.inventory {
-margin: 1em 0.5em;
+#shop-inventory th {
+display:none;
 }
 
-ul.inventory li{
-margin:0.4em 0 0.7em 0
+#shop-inventory a{
+font-size:1.1em;
+text-decoration:none;
+color:#4ab1d8;
+font-weight:bold;
+cursor: pointer;
 }
+
+#shop-inventory a:hover{
+font-size:1.1em;
+text-decoration:none;
+border-width:0 0 2px 0;
+border-style:solid;
+color:#4ab1d8;
+font-weight:bold;
+}
+
+
+colgroup.item-image {width:18px}
+colgroup.item-name {width:60%}
+colgroup.item-price {width:20%}
 
 div#nyroModalFull {
 	font-size: 12px;
