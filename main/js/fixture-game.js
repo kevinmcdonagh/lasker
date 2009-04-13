@@ -158,14 +158,6 @@ function showCoOrdinatesOnTileHover(){
 	}, function(){
 		clrMsgs();
 	});
-	
-	$("#gameboard-overlays div").hover(function(event){
-		var coords = this.id.split('-')[0];
-		addToMsgs(coords)
-		currentXY = coords;
-	}, function(){
-		clrMsgs();
-	});
 }
 
 function addToMsgs(msg){
