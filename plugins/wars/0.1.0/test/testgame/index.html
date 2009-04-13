@@ -10,6 +10,7 @@
 		<link rel="stylesheet" type="text/css" href="../../style/wars/css/demopage.css" />
 		<link rel="stylesheet" type="text/css" href="../../style/wars/css/nyroModal.css" />		
 		<script type="text/javascript" src="../../../../../main/lib/jquery-1.3.1.js"></script>
+		<script type="text/javascript" src="../../../../../plugins/wars/0.1.0/js/jquery.background_layers.js"></script>			
 		<script type="text/javascript" src="../../../../../plugins/wars/0.1.0/js/jquery.nyroModal-1.4.2.js"></script>			
 		<script type="text/javascript" src="../../../../../main/js/lasker-0.1.0.js"></script>
 		<script type="text/javascript" src="../../../../../plugins/wars/0.1.0/js/actions.js"></script>		
@@ -445,7 +446,7 @@
 							<td id="x21y11" class="road_horiz"></td>
 							<td id="x22y11" class="road_horiz"></td>
 							<td id="x23y11" class="road_junction_t_l_b"></td>
-							<td id="x24y11" class="base plain"><a href="#x24y11" title="Buy Recruits"><img alt="plain" class="plain" src="../../style/wars/img/board/plain.png" /></a></td>						
+							<td id="x24y11" class="base plain"><a class="p1-base" href="p1_base_click.php" title="Buy Recruits"><img alt="base" src="../../style/wars/img/p1/build/base.png" /></a></td>						
 							<td id="x25y11" class="plain_shadow_l"></td>						
 							<td id="x26y11" class="plain_cliff_bl"></td>						
 							<td id="x27y11" class="sea_beach_bl"></td>						
@@ -478,7 +479,7 @@
 							<td id="x18y10" class="plain_beach_r_end"></td>
 							<td id="x19y10" class="plain_trees"></td>
 							<td id="x20y10" class="plain_shadow_l"></td>
-							<td id="x21y10" class="plain base"><a href="#x22y10" title="Buy Recruits"><img alt="plain" class="plain" src="../../style/wars/img/board/plain.png" /></a></td>
+							<td id="x21y10" class="plain base"><a href="#x22y10" title="Buy Recruits"><img alt="plain" class="infantry" src="../../style/wars/img/p1/unit/infantry.png" /></a></td>
 							<td id="x22y10" class="plain_shadow_l"></td>
 							<td id="x23y10" class="road_junction_t_r_b"></td>
 							<td id="x24y10" class="road_horiz"></td>						
@@ -855,40 +856,39 @@
 			        </tbody>     
 		 	</table>
 			<div id="gameboard-overlays">
-				<div id="x21y14-l" class="building-red"></div>			
-				<div id="x23y14-ll" class="hq-red"></div>			
-				<div id="x25y13-l" class="building-red"></div>
+				<div id="x21y14-l" class="p1-building"></div>			
+				<div id="x23y14-ll" class="p1-hq"></div>			
+				<div id="x25y13-l" class="p1-building"></div>
 				<div id="x06y12-l" class="hill-l"></div>
 				<div id="x09y12-l" class="hill-l"></div>			
 				<div id="x14y12-l" class="hill-l"></div>
 				<div id="x19y12-l" class="hill-l"></div>
-				<div id="x22y12-l" class="building-red"></div>
-				<div id="x14y11-o" class="base-grey"></div>			
+				<div id="x22y12-l" class="p1-building"></div>
+				<div id="x14y11-o" class="p0-base"></div>			
 				<div id="x15y11-l" class="hill-l"></div>	
-				<div id="x24y11-o" class="base-p1"><a class="base-p1" href="p1_base_click.php" title="Buy Recruits"><img alt="base" src="../../style/wars/img/p1/build/base.png" /></a></div>
-				<div id="x21y10-o" class="base-p1"><a class="base-p1" href="p1_base_click.php" title="Buy Recruits"><img alt="base" src="../../style/wars/img/p1/build/base.png" /></a></div>
-				<div id="x07y09-o" class="base-p2"><a class="base-p2" href="p2_base_click.php" title="Buy Recruits" ><img alt="base" src="../../style/wars/img/p2/build/base.png" /></a></div>
+				<div id="x21y10-o" class="p1-base"><a class="p1-base" href="p1_base_click.php" title="Buy Recruits"><img alt="base" src="../../style/wars/img/p1/build/base.png" /></a></div>
+				<div id="x07y09-o" class="p2-base"><a class="p2-base" href="p2_base_click.php" title="Buy Recruits"><img alt="base" src="../../style/wars/img/p2/build/base.png" /></a></div>
 				<div id="x11y09-l" class="hill-l"></div>
 				<div id="x16y09-l" class="hill-l"></div>
-				<div id="x17y09-l" class="building-grey"></div>
+				<div id="x17y09-l" class="p0-building"></div>
 				<div id="x20y09-l" class="hill-l"></div>
 				<div id="x25y09-l" class="hill-l"></div>
 				<div id="x05y08-l" class="hill-l"></div>
-				<div id="x09y08-o" class="base-p2"><a class="base-p2" href="p2_base_click.php" title="Buy Recruits"><img alt="base" src="../../style/wars/img/p2/build/base.png" /></a></div>			
-				<div id="x16y08-l" class="building-grey"></div>
+				<div id="x09y08-o" class="p2-base"><a class="p2-base" href="p2_base_click.php" title="Buy Recruits"><img alt="base" src="../../style/wars/img/p2/build/base.png" /></a></div>			
+				<div id="x16y08-l" class="p0-building"></div>
 				<div id="x19y08-l" class="hill-l"></div>
-				<div id="x05y07-l" class="building-blue"></div>
+				<div id="x05y07-l" class="p2-building"></div>
 				<div id="x20y08-l" class="hill-l"></div>
-				<div id="x12y07-l" class="building-grey"></div>			
-				<div id="x24y07-l" class="building-grey"></div>
+				<div id="x12y07-l" class="p0-building"></div>			
+				<div id="x24y07-l" class="p0-building"></div>
 				<div id="x13y06-l" class="hill-l"></div>
-				<div id="x10y06-l" class="building-blue"></div>
+				<div id="x10y06-l" class="p2-building"></div>
 				<div id="x22y05-l" class="hill-l"></div>
-				<div id="x19y05-o" class="base-grey"></div>
+				<div id="x19y05-o" class="p0-base"></div>
 				<div id="x17y05-l" class="hill-l"></div>
 				<div id="x12y05-l" class="hill-l"></div>
-				<div id="x08y05-l" class="building-blue"></div>
-				<div id="x07y06-ll" class="hq-blue"></div>
+				<div id="x08y05-l" class="p2-building"></div>
+				<div id="x07y06-ll" class="p2-hq"></div>
 				<div id="x06y05-l" class="hill-l"></div>
 				<div id="x22y04-l" class=" hill-l"></div>
 				<div id="x20y04-l" class="hill-l"></div>
@@ -898,13 +898,14 @@
 	</div>
 	<a href="unit_click.php" id="menu-right" rev="modal">Right Menu</a><br />
 	<a href="unit_click.php" id="menu-left" rev="modal">Left Menu</a><br />
-	<a href="p1_base_click.php" class="base-p1">Central Menu</a><br />
+	<a href="p1_base_click.php" class="p1-base">Central Menu</a><br />
 	<div id="block2">
 		<div>
 			<h2>Move <span id="moveNo">0</span></h2>
 			<form method="post" action="">
 				<input type="button" name="lastMove" value="&lt;&lt;" id="btnLastMove" />
 				<input type="button" name="nextMove" value=">>" id="btnNextMove" />
+				<input type="button" name="moveBack" value="back" id="moveBack" />
 			</form>
 		</div>
 		<div id="messages">

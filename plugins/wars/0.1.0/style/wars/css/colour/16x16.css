@@ -52,9 +52,9 @@ td.sea_beachmound_t						{ background-image:url(../../img/board/sea_beachmound_t
 
 /* Overlays */
 div.hill-l	 							{ background-image:url(../../img/board/plain_hill_large.png) } 
-div.building-grey						{ background-image:url(../../img/board/build/building.png) } 
-div.base-grey 							{ background-image:url(../../img/board/build/base.png) } 
-div.building-red 						{ background-image:url(../../img/p1/build/building.png) } 
-div.building-blue 						{ background-image:url(../../img/p2/build/building.png) } 
-div.hq-blue 							{ background-image:url(../../img/p2/build/hq.png) } 
-div.hq-red 								{ background-image:url(../../img/p1/build/hq.png) } 
+div.p0-building							{ background-image:url(../../img/p0/build/building.png) } 
+div.p0-base 							{ background-image:url(../../img/p0/build/base.png) } 
+div.p1-building 						{ background-image:url(../../img/p1/build/building.png) } 
+div.p2-building 						{ background-image:url(../../img/p2/build/building.png) } 
+div.p2-hq								{ background-image:url(../../img/p2/build/hq.png) } 
+div.p1-hq 								{ background-image:url(../../img/p1/build/hq.png) } 

@@ -16,7 +16,6 @@ $(document).ready(function(){
 		padding: 5,	
 	  	minWidth: 100,
 		minHeight: 100,
-		title: "kevin title",
 		css: { // Default CSS option for the nyroModal Div. Some will be overwritten or updated when using IE6
 			wrapper: {
 				top: '25%',
@@ -40,7 +39,6 @@ $(document).ready(function(){
 		padding: 5,	
 	  	minWidth: 100,
 		minHeight: 100,
-		title: "kevin title",
 		css: { // Default CSS option for the nyroModal Div. Some will be overwritten or updated when using IE6
 			wrapper: {
 				top: '25%',
@@ -58,13 +56,12 @@ $(document).ready(function(){
 		resizable:false
 	});	
 	
-	$('.base-p2').nyroModal({	
+	$('.p2-base').nyroModal({	
 		bgColor: 'none', 
 		'blocker': '#gameboard',
 		padding: 5,	
 	  	minWidth: 150,
 		minHeight: 100,
-		title: "kevin title",
 		css: { // Default CSS option for the nyroModal Div. Some will be overwritten or updated when using IE6
 			wrapper: {
 				top: '50%',
@@ -82,13 +79,12 @@ $(document).ready(function(){
 		resizable:false
 	});	
 	
-	$('.base-p1').nyroModal({	
+	$('.p1-base').nyroModal({	
 		bgColor: 'none', 
 		'blocker': '#gameboard',
 		padding: 5,	
 	  	minWidth: 150,
 		minHeight: 100,
-		title: "kevin title",
 		css: { // Default CSS option for the nyroModal Div. Some will be overwritten or updated when using IE6
 			wrapper: {
 				top: '50%',
@@ -146,6 +142,13 @@ function highlightAllowedMoveOnClick()
 		
 		
     });
+	
+	$("#moveBack").live("click", function(){  
+		var src = $("#x24y11 img").attr('src');
+		var another = src;
+	});
+	
+	
 }
 
 function showCoOrdinatesOnTileHover(){
