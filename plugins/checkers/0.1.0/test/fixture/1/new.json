@@ -1,0 +1,14 @@
+{ 
+	"actingPlayer": "p1",
+	"activity":"possibleMoves",
+	"actingUnit": null,
+	"preMove": null,
+	"postMove": null,
+	"tiles":	
+	[
+		{	"x01y02": [ "x00y03","x02y03"] },
+		{	"x03y02": [ "x02y03","x04y03"] },		
+		{	"x05y02": [ "x04y03","x06y03"] },		
+		{	"x07y02": [ "x06y03"] }		
+	]
+}

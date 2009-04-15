@@ -5,6 +5,7 @@
 $.fn.fileFormat = ".png";
 $.fn.styleName = "lasker";
 $.fn.stylesDir = "../../style";
+$.fn.possibleMoves = [];
 
 function snapToMovableTiles(){
 	$("img").draggable({ 

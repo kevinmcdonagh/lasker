@@ -37,6 +37,10 @@ function loadJSONmove(fname){
                 $.fn.highlightTiles(action);
             }
 			
+            if (action.activity == "possibleMoves") {
+                $.fn.possibleMoves = tiles;
+            }			
+			
             if (action.activity == "replace") {
                 $.fn.replaceTiles(action);
             }
