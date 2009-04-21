@@ -1,0 +1,29 @@
+{ 
+	"activity":"move",
+	"actingPlayer": "p1",
+	"actions":
+	[
+		{
+			"preMove": null,
+			"postMove":"unHighlight",
+		    "actingUnit": 
+		    [
+		    	{
+					"coOrds":"x05y02",
+					"bg": "white",
+					"unit": null,
+					"occupant": null
+		    	}
+		    ],
+			"tiles":	
+			[
+				{
+					"coOrds":"x04y03",
+					"bg": "white",
+					"unit": "piece",
+					"occupant": "1"
+				}
+			]
+		}
+	]
+}
