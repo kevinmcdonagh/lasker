@@ -1,0 +1,118 @@
+{ 
+	"actingPlayer": "p2",
+	"actingUnit": [
+		{
+			"coOrds":"x05y04",
+			"bg": "white",
+			"unit": "queen",
+			"occupant": "p2"
+		}
+	],	
+	"activity":"highlight",
+	"preMove": null,
+	"tiles":	[
+		{
+			"coOrds":"x02y07",
+			"bg": "white",
+			"unit": null,
+			"occupant": null
+		},
+		{
+			"coOrds":"x03y06",
+			"bg": "white",
+			"unit": null,
+			"occupant": null
+		},
+		{
+			"coOrds":"x04y05",
+			"bg": "white",
+			"unit": null,
+			"occupant": null
+		},
+		{
+			"coOrds":"x06y05",
+			"bg": "white",
+			"unit": null,
+			"occupant": null
+		},
+		{
+			"coOrds":"x05y05",
+			"bg": "black",
+			"unit": null,
+			"occupant": null
+		},
+		{
+			"coOrds":"x04y04",
+			"bg": "black",
+			"unit": null,
+			"occupant": null
+		},
+		{
+			"coOrds":"x06y04",
+			"bg": "black",
+			"unit": null,
+			"occupant": null
+		},
+		{
+			"coOrds":"x07y04",
+			"bg": "white",
+			"unit": null,
+			"occupant": null
+		},
+		{
+			"coOrds":"x07y02",
+			"bg": "white",
+			"unit": "pawn",
+			"occupant": "p1"
+		},		
+		{
+			"coOrds":"x06y03",
+			"bg": "white",
+			"unit": null,
+			"occupant": null
+		},
+		{
+			"coOrds":"x05y03",
+			"bg": "black",
+			"unit": null,
+			"occupant": null
+		},
+		{
+			"coOrds":"x05y02",
+			"bg": "white",
+			"unit": null,
+			"occupant": null
+		},
+		{
+			"coOrds":"x04y03",
+			"bg": "white",
+			"unit": null,
+			"occupant": null
+		},
+		{
+			"coOrds":"x03y04",
+			"bg": "white",
+			"unit": "pawn",
+			"occupant": "p1"
+		},		
+		{
+			"coOrds":"x03y02",
+			"bg": "white",
+			"unit": null,
+			"occupant": null
+		},
+		{
+			"coOrds":"x02y01",
+			"bg": "white",
+			"unit": null,
+			"occupant": null
+		},
+		{
+			"coOrds":"x01y00",
+			"bg": "white",
+			"unit": null,
+			"occupant": null
+		}																														
+	],
+	"postMove":null
+}

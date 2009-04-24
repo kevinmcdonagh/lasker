@@ -1,0 +1,70 @@
+{ 
+	"actingPlayer": "p2",
+	"actingUnit": [
+		{
+			"coOrds":"x03y06",
+			"bg": "black",
+			"unit": "queen",
+			"occupant": "p2"
+		}
+	],	
+	"activity":"highlight",
+	"preMove": null,
+	"tiles":	[
+		{
+			"coOrds":"x02y07",
+			"bg": "white",
+			"unit": null,
+			"occupant": null
+		},
+		{
+			"coOrds":"x03y07",
+			"bg": "black",
+			"unit": null,
+			"occupant": null
+		},
+		{
+			"coOrds":"x04y07",
+			"bg": "white",
+			"unit": null,
+			"occupant": null
+		},
+		{
+			"coOrds":"x04y06",
+			"bg": "black",
+			"unit": null,
+			"occupant": null
+		},
+		{
+			"coOrds":"x04y05",
+			"bg": "white",
+			"unit": null,
+			"occupant": null
+		},
+		{
+			"coOrds":"x02y05",
+			"bg": "white",
+			"unit": null,
+			"occupant": null
+		},
+		{
+			"coOrds":"x01y04",
+			"bg": "white",
+			"unit": null,
+			"occupant": null
+		},
+		{
+			"coOrds":"x00y03",
+			"bg": "white",
+			"unit": null,
+			"occupant": null
+		},
+		{
+			"coOrds":"x05y04",
+			"bg": "white",
+			"unit": "knight",
+			"occupant": "p1"
+		}																		
+	],
+	"postMove":null
+}

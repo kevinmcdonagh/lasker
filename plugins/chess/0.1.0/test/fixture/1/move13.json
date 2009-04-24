@@ -1,0 +1,28 @@
+{ 
+	"actingPlayer": "p1",
+	"activity":"highlight",
+	"actingUnit": [
+		{
+			"coOrds":"x05y00",
+			"bg": "white",
+			"unit": "bishop",
+			"occupant": "p1"
+		}
+	],	
+	"preMove": null,
+	"tiles":	[
+		{
+			"coOrds":"x06y01",
+			"bg": "white",
+			"unit": null,
+			"occupant": null
+		},
+		{
+			"coOrds":"x07y02",
+			"bg": "white",
+			"unit": null,
+			"occupant": null
+		}
+	],
+	"postMove":null
+}

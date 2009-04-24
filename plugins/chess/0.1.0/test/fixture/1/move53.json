@@ -1,0 +1,46 @@
+{ 
+	"actingPlayer": "p1",
+	"actingUnit": [
+		{
+			"coOrds":"x02y00",
+			"bg": "black",
+			"unit": "bishop",
+			"occupant": "p1"
+		}
+	],	
+	"activity":"highlight",
+	"preMove": null,
+	"tiles":	[
+		{
+			"coOrds":"x03y01",
+			"bg": "black",
+			"unit": null,
+			"occupant": null
+		},
+		{
+			"coOrds":"x04y02",
+			"bg": "black",
+			"unit": null,
+			"occupant": null
+		},
+		{
+			"coOrds":"x05y03",
+			"bg": "black",
+			"unit": null,
+			"occupant": null
+		},
+		{
+			"coOrds":"x06y04",
+			"bg": "black",
+			"unit": null,
+			"occupant": null
+		},
+		{
+			"coOrds":"x07y05",
+			"bg": "black",
+			"unit": null,
+			"occupant": null
+		}																	
+	],
+	"postMove":null
+}

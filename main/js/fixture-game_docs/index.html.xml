@@ -1,0 +1,30 @@
+<?xml-stylesheet type="text/xsl" href="docs.xsl"?><javascript fileName="fixture-game.js">
+    <function name="highlightAllowedMoveOnClick" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="Function">
+    </function>
+    <function name="showCoOrdinatesOnTileHover" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="Function">
+    </function>
+    <function name="addToMsgs" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="Function">
+    </function>
+    <function name="logClick" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="Function">
+        <property name="window" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="Object">
+            <property name="clickCount" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="Object">
+            </property>
+        </property>
+    </function>
+    <function name="addToMsgHist" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="Function">
+    </function>
+    <function name="clrMsgs" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="Function">
+    </function>
+    <function name="loadJSONmove" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="Function">
+    </function>
+    <property name="$" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="Object">
+        <property name="fn" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="Object">
+            <property name="jsonLocation" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="String">
+            </property>
+            <function name="preActions" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="Function">
+            </function>
+            <function name="postActions" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="Function">
+            </function>
+        </property>
+    </property>
+</javascript>

@@ -1,0 +1,21 @@
+{ 
+	"actingPlayer": "p2",
+	"actingUnit": null,
+	"activity":"replace",
+	"preMove": null,
+	"tiles":	[
+		{
+			"coOrds":"x02y05",
+			"bg": "white",
+			"unit": "knight",
+			"occupant": null
+		},
+		{
+			"coOrds":"x01y07",
+			"bg": "black",
+			"unit": null,
+			"occupant": null
+		}
+	],
+	"postMove":"unHighlight"
+}

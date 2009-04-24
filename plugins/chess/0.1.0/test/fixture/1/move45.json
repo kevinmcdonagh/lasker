@@ -1,0 +1,44 @@
+{ 
+	"actingPlayer": "p1",
+	"actingUnit": [
+		{
+			"coOrds":"x04y00",
+			"bg": "black",
+			"unit": "king",
+			"occupant": "p1"
+		}
+	],	
+	"activity":"highlightCastlingKing",
+	"preMove": null,
+	"tiles":	[
+		{
+			"coOrds":"x05y00",
+			"bg": "white",
+			"unit": null,
+			"occupant": null
+		},
+		{
+			"coOrds":"x04y01",
+			"bg": "white",
+			"unit": null,
+			"occupant": null
+		}
+	],
+	"postMove":null,
+	"target": [
+		{
+			"coOrds":"x07y00",
+			"bg": "white",
+			"unit": "rook",
+			"occupant": "p1",
+			"tiles": [
+				{
+					"coOrds":"x06y00",
+					"bg": "black",
+					"unit": null,
+					"occupant": null
+				}
+			]
+		}
+	]
+}
